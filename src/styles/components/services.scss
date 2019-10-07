@@ -1,0 +1,74 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 66px;
+  height: 800px;
+  background-color: $black;
+}
+
+.card-outline {
+  background: linear-gradient(71.2deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
+  margin-top: -1px;
+}
+
+.card {
+  background-color: $white;
+  margin: 1px;
+}
+
+.card-service {
+  padding: 55px 10px 55px 100px;
+}
+
+.card-price {
+  position: relative;
+  padding: 55px 150px 55px 100px;
+  z-index: 1;
+}
+
+.card-price:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: linear-gradient(69.18deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
+  z-index: -1;
+  opacity: 0;
+}
+
+.card:hover .card-price:before {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.text--invisible {
+  position: relative;
+  opacity: 0;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.card:hover .text--invisible  {
+  opacity: 1;
+  color: $white;
+}
+.text--invisible:after{
+  content: url("../img/sprites/sprite.svg#arrow-right");
+  width: 37px;
+  position: absolute;
+  left: 110px;
+}
+
+.card:hover .title--small--white {
+  color: $white;
+}
+
+.text-list{
+
+}
