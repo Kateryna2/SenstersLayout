@@ -1,0 +1,30 @@
+input.input-line {
+  border: none;
+  width: 470px;
+  height: 28px;
+  border-bottom: solid 1px $black;
+  padding: 20px 0;
+  font-size: 16px;
+  font-weight: 100;
+
+  &:focus{
+    outline: none;
+  }
+}
+.submit{
+  width: 970px;
+  height: 227px;
+  font-family: Futura;
+  font-size: 120px;
+  font-weight: bold;
+  border: none;
+  background: -webkit-linear-gradient(69.18deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 4px transparent;
+  color: $white;
+}
+
+.card-outline-submit:hover .card{
+  background: linear-gradient(71.2deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
+  transition: background-color 0.5s;
+}
