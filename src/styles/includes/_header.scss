@@ -1,9 +1,32 @@
 .header {
   position: fixed;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
   top: 0;
   left: 0;
   right: 0;
   background: $black;
-  padding: 60px 135px 30px;
+  padding: 60px 135px 30px 100px;
   z-index: 2;
+}
+.menu {
+  color: $white;
+
+  &:after, &:before {
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 1px;
+    background: $white;
+    right: 90px;
+  }
+
+  &:after{
+    bottom: 50px;
+  }
+  &:before{
+    bottom: 40px;
+  }
 }
