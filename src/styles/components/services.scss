@@ -1,28 +1,15 @@
-.banner {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 100px;
-  background-color: $black;
-  height: 800px;
-
-  &:before {
-    content: url(../img/sprites/sprite.svg#arrow-down);
-    position: absolute;
-    width: 200px;
-    top: 730px;
-  }
-
-}
-
 .card {
   position: relative;
   background: linear-gradient(71.2deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
 
+  &:last-of-type:after {
+    bottom: 1px;
+  }
+
   .title--small--white {
     transition: color .5s ease;
   }
+
 
   &:hover {
     .title--small--white {
@@ -34,7 +21,7 @@
     content: '';
     position: absolute;
     top: 1px;
-    bottom: 1px;
+    bottom: 0;
     right: 1px;
     left: 1px;
     background: $white;
@@ -51,7 +38,6 @@
   position: relative;
   padding: 55px 150px 55px 100px;
   z-index: 1;
-}
 
   &:before {
     content: '';
@@ -88,24 +74,4 @@
       left: 110px;
     }
   }
-}
-
-.text-bold {
-  font-weight: bold;
-}
-
-.banner-down{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100px;
-  background-color: $black;
-  height: 800px;
-
-  &:before {
-    content: url(../img/sprites/sprite.svg#arrow-down);
-    width: 200px;
-  }
-
 }

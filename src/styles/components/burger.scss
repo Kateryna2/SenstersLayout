@@ -19,19 +19,19 @@
   transition: all .5s ease;
 
   &:first-child {
-    top: 8px;
+    top: 5px;
 
     .is-menu-open & {
-      top: 13px;
+      top: 9px;
       transform: rotate(45deg);
     }
   }
 
   &:last-child {
-    bottom: 8px;
+    bottom: 5px;
 
     .is-menu-open & {
-      bottom: 14px;
+      bottom: 9px;
       transform: rotate(-45deg);
     }
   }

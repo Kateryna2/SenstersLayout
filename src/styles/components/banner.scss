@@ -1,0 +1,32 @@
+.banner,
+.banner-down {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $black;
+  height: 800px;
+}
+
+.banner {
+  margin-bottom: 100px;
+
+  &:before {
+    content: url(../img/sprites/sprite.svg#arrow-down);
+    position: absolute;
+    width: 200px;
+    top: 730px;
+  }
+
+}
+
+.banner-down {
+  margin-top: 100px;
+
+  &:before {
+    content: url(../img/sprites/sprite.svg#arrow-down);
+    width: 200px;
+  }
+
+}
