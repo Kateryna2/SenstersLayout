@@ -1,0 +1,40 @@
+.title-colours-contacts {
+  width: 70%;
+  line-height: 34px;
+}
+
+.contacts-list {
+  margin-top: 34px;
+
+  & .phone, .mail {
+    padding-left: 50px;
+    padding-bottom: 43px;
+    position: relative;
+  }
+
+  & .phone:before {
+    content: url("../img/sprites/sprite.svg#phone-icon");
+    position: absolute;
+    width: 115px;
+    left: -45px;
+    top: -3px;
+  }
+
+  & .mail:before {
+    content: url("../img/sprites/sprite.svg#mail-icon");
+    position: absolute;
+    width: 115px;
+    left: -45px;
+    top: -3px;
+  }
+}
+
+.submit-small {
+  width: 100%;
+  outline: none;
+  border: none;
+  background: linear-gradient(71.2deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
+  height: 60px;
+  color: white;
+  font-weight: bold;
+}
