@@ -16,32 +16,34 @@
 
 }
 
-.card-outline {
-  background: linear-gradient(71.2deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
-  margin-top: -1px;
-}
-
 .card {
-  background-color: $white;
-  margin: 1px;
+  position: relative;
+  background: linear-gradient(71.2deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
 
-  &:hover .card-price:before {
-    opacity: 1;
-    transition: opacity 0.3s;
+  .title--small--white {
+    transition: color .5s ease;
   }
 
-  &:hover .text--invisible {
-    opacity: 1;
-    transition: opacity 0.3s;
-    color: $white;
+  &:hover {
+    .title--small--white {
+      color: $white;
+    }
   }
 
-  &:hover .title--small--white {
-    color: $white;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    bottom: 1px;
+    right: 1px;
+    left: 1px;
+    background: $white;
   }
 }
 
 .card-service {
+  position: relative;
+  z-index: 1;
   padding: 55px 10px 55px 100px;
 }
 
@@ -49,6 +51,7 @@
   position: relative;
   padding: 55px 150px 55px 100px;
   z-index: 1;
+}
 
   &:before {
     content: '';
@@ -60,19 +63,35 @@
     background: linear-gradient(69.18deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
     z-index: -1;
     opacity: 0;
+    transition: opacity .5s ease;
+  }
+
+  .card:hover &:before {
+    opacity: 1;
+    transition: opacity 0.3s;
   }
 }
 
 .text--invisible {
   position: relative;
+  color: $white;
   opacity: 0;
+  transition: opacity .5s ease;
 
-  &:after {
-    content: url("../img/sprites/sprite.svg#arrow-right");
-    width: 37px;
-    position: absolute;
-    left: 110px;
+  .card:hover & {
+    opacity: 1;
+
+    &:after {
+      content: url("../img/sprites/sprite.svg#arrow-right");
+      width: 37px;
+      position: absolute;
+      left: 110px;
+    }
   }
+}
+
+.text-bold {
+  font-weight: bold;
 }
 
 .banner-down{

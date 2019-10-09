@@ -1,0 +1,38 @@
+.burger {
+  position: relative;
+  color: $white;
+  background: transparent;
+  border: none;
+  font-weight: bold;
+  padding: 0 43px 0 0;
+  margin: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.burger-line {
+  position: absolute;
+  width: 32px;
+  height: 1px;
+  right: 0;
+  background: $white;
+  transition: all .5s ease;
+
+  &:first-child {
+    top: 8px;
+
+    .is-menu-open & {
+      top: 13px;
+      transform: rotate(45deg);
+    }
+  }
+
+  &:last-child {
+    bottom: 8px;
+
+    .is-menu-open & {
+      bottom: 14px;
+      transform: rotate(-45deg);
+    }
+  }
+}
