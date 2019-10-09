@@ -1,10 +1,15 @@
 .title-colours-contacts {
-  width: 70%;
   line-height: 34px;
+  min-height: 68px;
+  margin-bottom: 50px;
+  padding: 0;
+}
+
+.title-colours-narrow {
+  width: 70%;
 }
 
 .contacts-list {
-  margin-top: 34px;
 
   & .phone, .mail {
     padding-left: 50px;
@@ -12,20 +17,19 @@
     position: relative;
   }
 
-  & .phone:before {
-    content: url("../img/sprites/sprite.svg#phone-icon");
+  & .mail:before, .phone:before {
     position: absolute;
     width: 115px;
     left: -45px;
     top: -3px;
   }
 
+  & .phone:before {
+    content: url("../img/sprites/sprite.svg#phone-icon");
+  }
+
   & .mail:before {
     content: url("../img/sprites/sprite.svg#mail-icon");
-    position: absolute;
-    width: 115px;
-    left: -45px;
-    top: -3px;
   }
 }
 
