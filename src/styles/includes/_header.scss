@@ -11,22 +11,39 @@
   padding: 60px 135px 30px 100px;
   z-index: 2;
 }
+
 .menu {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 680px;
+  background: $black;
+  z-index: 1;
+  top: 117px;
+  font-size: 48px;
+  line-height: 64px;
+  font-weight: bold;
+}
+
+.menu-visible{
+  display: flex;
+}
+
+
+.menu-item{
   color: $white;
+  padding-bottom: 30px;
 
-  &:after, &:before {
-    content: '';
-    position: absolute;
-    width: 32px;
-    height: 1px;
-    background: $white;
-    right: 90px;
-  }
-
-  &:after{
-    bottom: 50px;
-  }
-  &:before{
-    bottom: 40px;
+  &:hover{
+    background: linear-gradient(29.72deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 4px transparent;
+    color: $black;
+    transition: 0.5s;
   }
 }
+
+
