@@ -14,6 +14,24 @@
   padding: 20px 0 90px 0;
 }
 
+.title--banner-main {
+  font-family: Futura;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 120px;
+  text-transform: uppercase;
+  color: $white;
+
+  &:hover{
+    background: linear-gradient(29.72deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 4px transparent;
+    color: $black;
+    transition: 0.5s;
+    cursor: default;
+  }
+}
+
 .title--banner {
   font-family: Futura;
   font-size: 120px;
@@ -47,15 +65,43 @@
   padding: 60px 0;
 }
 
+.title-colours--big-vertical{
+  font-size: 72px;
+  line-height: 81px;
+  font-weight: bold;
+  background: linear-gradient(29.72deg,  #EB3423 14.49%, #EB3626 66.87%, #00009A 80.43%);
+  width: fit-content;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title-colours--big{
+  font-size: 72px;
+  line-height: 81px;
+  font-weight: bold;
+  background: linear-gradient(29.72deg,  #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
+  width: fit-content;
+  height: fit-content;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .text {
-  font-weight: normal;
-  color: $black;
   font-size: 18px;
   line-height: 28px;
+  font-weight: normal;
+  color: $black;
 }
 
 .text-bold {
   font-weight: bold;
+}
+
+.quote-text{
+  font-size: 36px;
+  line-height: 46px;
+  font-weight: bold;
+  color: $white;
 }
 
 .btn--big-title {

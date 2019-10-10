@@ -1,12 +1,19 @@
 .banner,
-.banner-down {
+.banner-down,
+.banner-main{
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
   background-color: $black;
   height: 800px;
+}
+
+.banner-main {
+  margin-bottom: 100px;
+  justify-content: flex-end;
 }
 
 .banner {
@@ -15,18 +22,19 @@
   &:before {
     content: url(../img/sprites/sprite.svg#arrow-down);
     position: absolute;
-    width: 200px;
+    width: 40px;
     top: 730px;
   }
 
 }
+
 
 .banner-down {
   margin-top: 100px;
 
   &:before {
     content: url(../img/sprites/sprite.svg#arrow-down);
-    width: 200px;
+    width: 40px;
   }
 
 }

@@ -1,0 +1,79 @@
+.title--banner-main {
+  padding-left: 100px;
+  padding-right: 135px;
+}
+
+.title--banner-main:first-of-type {
+  align-self: flex-start;
+}
+
+.title--banner-main:nth-of-type(2n) {
+  margin-left: -100px;
+}
+
+.title--banner-main:last-of-type {
+  align-self: flex-end;
+}
+
+.social-icons {
+  align-self: flex-start;
+  justify-items: flex-end;
+  padding: 150px 0 55px 70px;
+  display: inline-block;
+}
+
+.insta-icon {
+  padding-left: 40px;
+}
+
+.quote-text {
+  display: block;
+  background: linear-gradient(66.64deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
+  height: 490px;
+  min-width: 1105px;
+  width: 100%;
+  padding-top: 175px;
+  padding-left: 100px;
+}
+
+.title-vertical {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  text-align: center;
+  padding-left: 120px;
+}
+
+.quote {
+  display: flex;
+  max-width: 95%;
+  margin-left: auto;
+}
+
+.info-block {
+  max-width: 1000px;
+  height: 400px;
+  margin-top: 155px;
+  align-items: center;
+  position: relative;
+}
+
+.text--info-block {
+  float:right;
+  width: 370px;
+  margin-right: 100px;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 100;
+
+  &:before{
+    content: url("../img/sprites/sprite.svg#1");
+    position: absolute;
+    width: 200px;
+    z-index: -1;
+    top: -50px;
+    right: 350px;
+  }
+}
+.paragraph{
+  padding-bottom: 30px;
+}
