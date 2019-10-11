@@ -33,33 +33,3 @@
   }
 }
 
-.form__submit {
-  width: 100%;
-  outline: none;
-  border: none;
-  background: linear-gradient(71.2deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
-  background-size: 120%;
-  background-position: center;
-  height: 60px;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  transition: box-shadow .35s ease;
-  
-  @keyframes hover-animation {
-    0% {
-      background-position: center;
-    }
-    50% {
-      background-position: left;
-    }
-    75% {
-      background-position: right;
-    }
-  }
-
-  &:hover {
-    animation: hover-animation 3.5s linear infinite;
-    box-shadow: 0 0 10px rgba($black, .6);
-  }
-}

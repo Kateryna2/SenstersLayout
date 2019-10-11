@@ -13,38 +13,9 @@
 
 
 .title-small-careers {
-  //display: flex;
   align-items: center;
   text-align: center;
   max-width: 670px;
 }
 
 
-[type="file"] {
-  height: 0;
-  overflow: hidden;
-  width: 0;
-}
-
-.attach-file{
-  display: block;
-  position: relative;
-  width: fit-content;
-  color: #828282;
-  margin-top: 30px;
-  outline: none;
-  cursor: pointer;
-  font-weight: 100;
-  font-size: 18px;
-
-  &:after{
-    content: url("../img/sprites/sprite.svg#pin");
-    position: absolute;
-    width: 25px;
-    top: -4px;
-    left: 90px;
-  }
-}
-.form-label-file{
-  display: block;
-}
