@@ -21,7 +21,7 @@
   &:first-child {
     top: 5px;
 
-    .is-menu-open & {
+    body.is-menu-open & {
       top: 9px;
       transform: rotate(45deg);
     }
@@ -30,7 +30,7 @@
   &:last-child {
     bottom: 5px;
 
-    .is-menu-open & {
+    body.is-menu-open & {
       bottom: 9px;
       transform: rotate(-45deg);
     }
