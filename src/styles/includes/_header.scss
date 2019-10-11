@@ -13,7 +13,7 @@
 }
 
 .menu {
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -26,10 +26,14 @@
   font-size: 48px;
   line-height: 64px;
   font-weight: bold;
-}
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .35s ease;
 
-.menu-visible{
-  display: flex;
+  body.is-menu-open & {
+    opacity: 1;
+    pointer-events: auto;
+  }
 }
 
 

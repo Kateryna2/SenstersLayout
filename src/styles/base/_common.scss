@@ -18,6 +18,13 @@ body {
   overflow-x: hidden;
   font-family: 'Pragmatica', sans-serif;
   font-weight: 400;
+
+  &.is-menu-open {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
 }
 
 .container {
