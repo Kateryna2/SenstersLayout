@@ -11,17 +11,21 @@
 
 .contacts-list {
 
-  & .phone, .mail {
+  & .list-item {
     padding-left: 50px;
     padding-bottom: 43px;
     position: relative;
   }
 
-  & .mail:before, .phone:before {
+  & .list-item:before {
     position: absolute;
     width: 26px;
     left: 0;
     top: -5px;
+  }
+
+  & a{
+    color: $black;
   }
 
   & .phone:before {

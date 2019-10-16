@@ -1,6 +1,6 @@
 .banner,
 .banner-down,
-.banner-main{
+.banner-main {
 
   display: flex;
   flex-direction: column;
@@ -14,6 +14,7 @@
 .banner-main {
   margin-bottom: 100px;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .banner {
@@ -28,9 +29,7 @@
     height: 40px;
     top: 730px;
   }
-
 }
-
 
 .banner-down {
   margin-top: 100px;
@@ -42,5 +41,4 @@
     width: 35px;
     height: 40px;
   }
-
 }
