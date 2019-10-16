@@ -3,6 +3,10 @@
   width: calc(50% - 15px);
 }
 
+.form-group-send{
+  width: calc(100% - 200px);
+}
+
 .form__input {
   display: flex;
   width: 100%;
@@ -91,6 +95,23 @@
   }
 }
 
+.form__submit-small {
+  position: relative;
+  height: 60px;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: bold;
+  background: linear-gradient(29.72deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 1;
+
+
+  &[type=submit]:focus {
+    outline: 0;
+  }
+}
+
 .attach-file {
   display: block;
   position: relative;
@@ -118,6 +139,52 @@
       width: 0;
     }
   }
+}
+
+.btn__send {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+
+  &:hover {
+    &:before {
+      content: '';
+      position: absolute;
+      background: linear-gradient(71.2deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
+      transition: background-color 0.5s;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      background-color: $white;
+      opacity: 0;
+      transition: opacity 0.8s;
+    }
+  }
+
+  &:hover .form__send{
+    color: $white;
+    background: none;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: $white;
+  }
+
+}
+
+.form__send{
+  outline: 0;
+  border: none;
+  z-index: 3;
+  font-size: 16px;
+  font-weight: bold;
+  background: linear-gradient(29.72deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
+  width: fit-content;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }
 
 

@@ -73,9 +73,18 @@
   width: fit-content;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding-bottom: 60px;
 }
 
+.title-colours--medium {
+  font-size: 48px;
+  line-height: 64px;
+  font-weight: bold;
+  background: linear-gradient(29.72deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
+  width: fit-content;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 30px;
+}
 .title-colours--big-vertical{
   font-size: 72px;
   line-height: 81px;
@@ -119,6 +128,10 @@
 
 .text-bold {
   font-weight: bold;
+}
+
+.text-small{
+  font-size: 16px;
 }
 
 .quote-text{
