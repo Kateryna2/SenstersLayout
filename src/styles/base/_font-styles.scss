@@ -6,6 +6,14 @@
   padding-bottom: 20px;
 }
 
+.title--small--white {
+  font-weight: bold;
+  color: $white;
+  font-size: 24px;
+  line-height: 28px;
+  padding-bottom: 20px;
+}
+
 .title--forms {
   font-weight: bold;
   color: $black;
@@ -34,16 +42,19 @@
 
 .title--banner {
   font-family: Futura;
-  font-size: 120px;
+  font-size: 100px;
+  line-height: 120px;
   font-weight: bold;
   color: $white;
 }
 
 .title--banner-down {
   font-family: Futura;
-  font-size: 120px;
+  font-size: 100px;
+  line-height: 140px;
   font-weight: bold;
   color: $white;
+
 
   &:hover{
     background: linear-gradient(29.72deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
@@ -97,6 +108,13 @@
   line-height: 28px;
   font-weight: normal;
   color: $black;
+}
+
+.text--white {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: normal;
+  color: $white;
 }
 
 .text-bold {
