@@ -28,13 +28,32 @@ body {
 }
 
 .container {
-  max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
+
+  @media screen and (min-width: $max-sm + 1px) {
+    max-width: 738px;
+  }
+
+  @media screen and (min-width: $max-md + 1px) {
+    max-width: 962px;
+  }
+
+  @media screen and (min-width: $max-lg + 1px) {
+    max-width: 1170px;
+  }
 }
 
 .container--narrow {
-  max-width: 970px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: $max-sm + 1px) {
+    max-width: 730px;
+  }
+
+  @media screen and (min-width: $max-md + 1px) {
+    max-width: 970px;
+  }
 }
