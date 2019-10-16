@@ -75,3 +75,21 @@
     transform: rotate(-45deg);
   }
 }
+
+.btn--go-back {
+  width: 370px;
+  margin-top: 60px;
+
+  &:hover a{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: $white;
+  }
+
+  & a{
+    z-index: 1;
+    background: linear-gradient(29.72deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
+    width: fit-content;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
