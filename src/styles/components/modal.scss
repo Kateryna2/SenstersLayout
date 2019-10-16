@@ -1,0 +1,77 @@
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 50%;
+  margin-left: -285px;
+  padding: 80px 0;
+  background: $white;
+  outline-style: solid;
+  outline-width: 1px;
+  width: 570px;
+  top: 140px;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 3;
+  transition: opacity .35s ease;
+
+  &.is-open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+.modal-bg{
+  position: fixed;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 2;
+
+  .is-modal-open & {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+
+  &:active,
+  &:focus{
+    outline: none;
+
+  }
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: 25px;
+    height: 1px;
+    background-color: $black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}

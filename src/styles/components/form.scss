@@ -1,9 +1,12 @@
-
+.form{
+  //padding-top: 40px;
+}
 .form-group {
   width: calc(50% - 15px);
+  padding-top: 60px;
 }
 
-.form-group-send{
+.form-group-send {
   width: calc(100% - 200px);
 }
 
@@ -89,6 +92,7 @@
   color: $white;
   border: none;
   z-index: 1;
+  cursor: pointer;
 
   &[type=submit]:focus {
     outline: 0;
@@ -105,7 +109,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   z-index: 1;
-
+  cursor: pointer;
 
   &[type=submit]:focus {
     outline: 0;
@@ -163,9 +167,28 @@
       opacity: 0;
       transition: opacity 0.8s;
     }
+
+    transition: box-shadow .35s ease;
+
+    @keyframes hover-animation {
+      0% {
+        background-position: center;
+      }
+      50% {
+        background-position: left;
+      }
+      75% {
+        background-position: right;
+      }
+    }
+
+    &:hover {
+      animation: hover-animation 3.5s linear infinite;
+      box-shadow: 0 0 10px rgba($black, .6);
+    }
   }
 
-  &:hover .form__send{
+  &:hover .form__send {
     color: $white;
     background: none;
     -webkit-background-clip: text;
@@ -174,10 +197,11 @@
 
 }
 
-.form__send{
+.form__send {
   outline: 0;
   border: none;
   z-index: 3;
+  cursor: pointer;
   font-size: 16px;
   font-weight: bold;
   background: linear-gradient(29.72deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
