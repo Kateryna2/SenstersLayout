@@ -1,30 +1,19 @@
 $(document).ready(function(){
     $('.reviews-list').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
         centerMode: true,
-        centerPadding: '60px',
+        arrows: false,
+        fade: true,
+        asNavFor: '.reviews-list-nav'
+    });
+    $('.reviews-list-nav').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
+        asNavFor: '.reviews-list',
+        dots: false,
+        arrows: true,
+        centerMode: true,
         focusOnSelect: true,
-        arrows: false,
-        responsive: [
-            {
-                breakpoint: 500,
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '40px',
-                    slidesToShow: 3
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '40px',
-                    slidesToShow: 1
-                }
-            }
-        ]
 });
 });
