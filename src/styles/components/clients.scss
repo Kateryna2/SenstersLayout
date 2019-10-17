@@ -1,8 +1,13 @@
+.background{
+  background: linear-gradient(69.18deg, #00009A 20%, #EB3626 90%, #EB3423 100%);
+}
+
+
 .clients {
-  //margin-right: -2px;
-  flex-direction: row;
-  position: relative;
- justify-content: flex-start;
+ // //margin-right: -2px;
+ // flex-direction: row;
+ // position: relative;
+ //justify-content: flex-start;
 
   &:before{
     //content: "";
@@ -77,30 +82,30 @@ img.clients-logo {
 }
 
 .review-card{
-  width: 570px;
   height: 476px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   color: $white;
 
-  &:nth-child(1),
-  &:nth-child(3){
-    width: 270px;
-    height: 180px;
-    font-size: 13px;
-    filter: blur(9px);
-    margin-top: 50px;
-    overflow: hidden;
 
-    & .review-text{
-      padding: 15px;
-    }
-    & .review-client-photo{
-      width: 37px;
-      height: 37px;
-    }
-
-  }
+  //&:nth-child(1),
+  //&:nth-child(3){
+  //  width: 270px;
+  //  height: 180px;
+  //  font-size: 13px;
+  //  filter: blur(9px);
+  //  margin-top: 50px;
+  //  overflow: hidden;
+  //
+  //  & .review-text{
+  //    padding: 15px;
+  //  }
+  //  & .review-client-photo{
+  //    width: 37px;
+  //    height: 37px;
+  //  }
+  //
+  //}
 }
 
 
@@ -126,8 +131,8 @@ margin: 40px 0 0 20px;
 }
 
 .review-text{
-  font-size: 16px;
-  line-height: 28px;
+  font-size: 13px;
+  line-height: 16px;
   mix-blend-mode: normal;
   opacity: 0.8;
   padding: 37px;

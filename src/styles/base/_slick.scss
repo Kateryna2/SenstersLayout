@@ -71,6 +71,7 @@
     }
 }
 .slick-slide {
+    margin: 30px 20px;
     float: left;
     height: 100%;
     min-height: 1px;
@@ -106,4 +107,46 @@
 }
 .slick-arrow.slick-hidden {
     display: none;
+}
+
+.slick-slide:not(.slick-center) {
+    //width: 270px !important;
+    height: 180px;
+    //font-size: 13px;
+    filter: blur(9px);
+    margin-top: 150px;
+    overflow: hidden;
+    //margin-right: 20px;
+    //margin-left: 20px;
+
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    transform: scale(0.75);
+
+    & .review-text {
+      //  padding: 15px;
+    }
+
+    & .review-client-photo {
+       // width: 37px;
+       // height: 37px;
+    }
+}
+
+.slick-center {
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    transform: scale(1.15);
+}
+.slick-list {
+    padding:45px 60px !important;
+    margin-left:30px !important;
+}
+
+.slick-center {
+//width: 570px !important;
+}
+
+.slick-track{
+    //transform: translate3d(-900px, 0px, 0px) !important;
 }

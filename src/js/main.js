@@ -6,4 +6,6 @@ import './burger';
 import './modal';
 import './form';
 import './input-file';
+import './slider';
+import './slick';
 
