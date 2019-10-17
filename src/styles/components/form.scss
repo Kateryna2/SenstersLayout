@@ -128,12 +128,15 @@
   font-weight: 100;
   font-size: 18px;
 
+  .file-selected + & {
+    color: $black;
+  }
   &:after {
     content: url("../img/sprites/sprite.svg#pin");
     position: absolute;
     width: 25px;
     top: -4px;
-    left: 90px;
+    left: 130px;
   }
 
   &__input {
