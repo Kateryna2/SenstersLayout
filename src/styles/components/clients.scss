@@ -23,23 +23,21 @@
 
 
 
-@media (min-width: 1150px) {
+@media (min-width: 1200px) {
   &:nth-child(5n) {
     border-right: none;
   }
 
 }
 
-  @media (max-width: 1149px) and (min-width: 920px) {
+  @media (max-width: 1199px) and (min-width: 992px) {
 
     &:nth-child(4n) {
       border-right: none;
     }
   }
 
-  @media (max-width: 919px) and (min-width: 690px) {
-    //width: 200px;
-    //height: 100px;
+  @media (max-width: 991px) and (min-width: 690px) {
 
     &:nth-child(3n) {
       border-right: none;

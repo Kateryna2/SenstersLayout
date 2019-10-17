@@ -8,8 +8,7 @@
   margin-left: -285px;
   padding: 80px 0;
   background: $white;
-  outline-style: solid;
-  outline-width: 1px;
+  outline: solid 1px #00009A;
   width: 570px;
   top: 140px;
   opacity: 0;
@@ -17,11 +16,22 @@
   z-index: 3;
   transition: opacity .35s ease;
 
+  &.modal-wide{
+    width: 964px;
+    margin-left: -482px;
+    padding: 80px 80px;
+
+    &.form.form-group-send{
+    width: 370px;
+    }
+  }
+
   &.is-open {
     opacity: 1;
     pointer-events: auto;
   }
 }
+
 
 .modal-bg{
   position: fixed;
@@ -92,4 +102,8 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+}
+
+.hidden-input{
+  display: none;
 }

@@ -7,13 +7,35 @@
             <input required type="text" class="form__input" id="input-1">
 
             <label for="input-2" class="text-small text-bold">*Phone</label>
-            <input required type="email" class="form__input" id="input-2">
+            <input required type="tel" class="form__input" id="input-2">
 
-            <div class="card btn__send">
+            <div class="card btn__send js-modal-call" data-modal="thank-you">
                 <input type="submit" value="Send" class="form__send">
             </div>
         </form>
     </div>
+
+<div id="order" class="modal modal-wide">
+    <button type="button" class="js-modal-close modal-close"></button>
+    <p class="title-colours--medium text-center">Integrated UX/UI audit and website optimization </p>
+    <form class="form-group-send">
+        <label for="input-3" class="text-small text-bold">*Name & Surname</label>
+        <input required type="text" class="form__input" id="input-3">
+
+        <label for="input-4" class="text-small text-bold">*Phone</label>
+        <input required type="tel" class="form__input" id="input-4">
+
+        <label for="input-5" class="text-small text-bold">*Email</label>
+        <input required type="email" class="form__input" id="input-5">
+
+        <label for="input-6" class="hidden-input"></label>
+        <input required type="text" class="hidden-input" id="input-6">
+
+        <div class="card btn__send js-modal-call" data-modal="thank-you">
+            <input type="submit" value="Order now" class="form__send">
+        </div>
+    </form>
+</div>
 
 <div id="thank-you" class="modal">
     <button type="button" class="js-modal-close modal-close"></button>
