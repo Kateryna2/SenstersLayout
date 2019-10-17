@@ -5,4 +5,5 @@ import 'jquery.cookie';
 import './burger';
 import './modal';
 import './form';
+import './input-file';
 
