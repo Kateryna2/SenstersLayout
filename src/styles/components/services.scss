@@ -32,12 +32,19 @@
   position: relative;
   z-index: 1;
   padding: 55px 10px 55px 100px;
+  width: 70%;
 }
 
 .card-price {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
   position: relative;
-  padding: 55px 150px 55px 100px;
+  padding: 55px 50px 55px 50px;
   z-index: 1;
+  width: 30%;
+
 
   &:before {
     content: '';
@@ -74,4 +81,8 @@
       left: 110px;
     }
   }
+}
+
+.text-list{
+  padding-top: 20px;
 }
