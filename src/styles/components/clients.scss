@@ -75,7 +75,7 @@ img.clients-logo {
   width: 100%;
   height: 100%;
   position: absolute;
-  top: 400px;
+  top: 350px;
   left: 0;
 
 }
@@ -91,7 +91,7 @@ img.clients-logo {
   color: $white;
 
   &-nav {
-    transform: scale(0.6);
+    transform: scale(0.5);
     height: 270px;
     overflow: hidden;
     filter: blur(12px);
@@ -147,7 +147,7 @@ img.clients-logo {
 button.slick-prev.slick-arrow {
   position: absolute !important;
   top: 130px;
-  left: 30%;
+  left: calc(50% - 330px);
   background: none;
   border: none;
   z-index: 999;
@@ -160,7 +160,7 @@ button.slick-prev.slick-arrow {
 button.slick-next.slick-arrow {
   position: absolute !important;
   top: 130px;
-  left: 67%;
+  left: calc(50% + 285px);
   background: none;
   border: none;
   z-index: 999;
