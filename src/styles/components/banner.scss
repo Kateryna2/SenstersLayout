@@ -1,6 +1,4 @@
-.banner,
-.banner-down,
-.banner-main {
+.banner{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,13 +9,13 @@
   padding: 0 15px;
 }
 
-.banner-main {
+.banner--main {
   margin-bottom: 100px;
   justify-content: flex-end;
   align-items: center;
 }
 
-.banner {
+.banner--top {
   margin-bottom: 100px;
 
   &:before {
@@ -31,7 +29,7 @@
   }
 }
 
-.banner-down {
+.banner--down {
   margin-top: 100px;
 
   &:before {
