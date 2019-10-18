@@ -25,10 +25,18 @@
 .title--banner-main {
   font-family: Futura;
   font-weight: bold;
-  font-size: 100px;
-  line-height: 120px;
+  line-height: 1.2;
   text-transform: uppercase;
   color: $white;
+  font-size: 40px;
+
+  @media screen and (min-width: $max-sm + 1px) {
+    font-size: 80px;
+  }
+
+  @media screen and (min-width: $max-lg + 1px) {
+    font-size: 100px;
+  }
 
   &:hover{
     background: linear-gradient(29.72deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);

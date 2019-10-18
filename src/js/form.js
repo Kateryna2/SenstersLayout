@@ -16,6 +16,10 @@ function sendAjaxSubscribeForm(url, $form) {
         $('body').removeClass('is-modal-open');
         $('.modal.is-open').removeClass('is-open');
         $('#thank-you').addClass('is-open');
+
+        $form.find('input').each(function() {
+          $(this).val('');
+        });      
       }
   });
 }

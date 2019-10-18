@@ -1,6 +1,13 @@
 .main-title {
-  max-width: 1160px;
   width: 100%;
+
+  @media screen and (min-width: $max-sm + 1px) {
+    max-width: 760px;
+  }
+
+  @media screen and (min-width: $max-lg + 1px) {
+    max-width: 1160px;
+  }
 }
 
 .title--banner-main {
@@ -40,10 +47,12 @@
 }
 
 .title-vertical {
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-  text-align: center;
-  padding-left: 120px;
+  @media screen and (min-width: $max-sm + 1px) {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-align: center;
+    padding-left: 120px;
+  }
 }
 
 .quote {

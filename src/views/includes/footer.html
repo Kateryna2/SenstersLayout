@@ -2,7 +2,7 @@
     <div id="call-me" class="modal">
         <button type="button" class="js-modal-close modal-close"></button>
         <p class="title-colours--medium">Call me</p>
-        <form class="form-group-send">
+        <form class="form-group-send js-form">
             <label for="input-1" class="text-small text-bold">*Name</label>
             <input required type="text" class="form__input" id="input-1">
 
@@ -10,15 +10,15 @@
             <input required type="tel" class="form__input" id="input-2">
 
             <div class="card btn__send js-modal-call" data-modal="thank-you">
-                <input type="submit" value="Send" class="form__send">
+                <button type="submit" class="form__send">Order now</button>
             </div>
         </form>
     </div>
 
 <div id="order" class="modal modal-wide">
     <button type="button" class="js-modal-close modal-close"></button>
-    <p class="title-colours--medium text-center">Integrated UX/UI audit and website optimization </p>
-    <form class="form-group-send">
+    <p class="title-colours--medium text-center js-filled-title">Integrated UX/UI audit and website optimization </p>
+    <form class="form-group-send js-form">
         <label for="input-3" class="text-small text-bold">*Name & Surname</label>
         <input required type="text" class="form__input" id="input-3">
 
@@ -28,11 +28,10 @@
         <label for="input-5" class="text-small text-bold">*Email</label>
         <input required type="email" class="form__input" id="input-5">
 
-        <label for="input-6" class="hidden-input"></label>
-        <input required type="text" class="hidden-input" id="input-6">
+        <input required type="text" hidden class="js-filled-input" id="input-6">
 
-        <div class="card btn__send js-modal-call" data-modal="thank-you">
-            <input type="submit" value="Order now" class="form__send">
+        <div class="card btn__send">
+            <button type="submit" class="form__send">Order now</button>
         </div>
     </form>
 </div>

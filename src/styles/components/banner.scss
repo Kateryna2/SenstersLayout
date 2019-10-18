@@ -1,7 +1,6 @@
 .banner,
 .banner-down,
 .banner-main {
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,6 +8,7 @@
   position: relative;
   background-color: $black;
   height: 800px;
+  padding: 0 15px;
 }
 
 .banner-main {
