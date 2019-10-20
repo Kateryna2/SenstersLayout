@@ -13,6 +13,17 @@ width: 100%;
   }
 }
 
+.form-group-careers{
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (min-width: $max-sm + 1px){
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}
+
 .form-group-send {
   width: 370px;
 }
