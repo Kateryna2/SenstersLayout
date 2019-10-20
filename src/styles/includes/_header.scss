@@ -48,6 +48,7 @@
   position: absolute;
   width: 100%;
   height: 100vh;
+  padding-top: 100px;
   background: $black;
   z-index: 1;
   font-size: 36px;
@@ -65,7 +66,7 @@
 
   @media screen and (min-width: $max-md + 1px) {
     font-size: 48px;
-    top: 117px;
+    top: 17px;
   }
 }
 
@@ -80,6 +81,18 @@
     -webkit-text-stroke: 4px transparent;
     color: $black;
     transition: 0.5s;
+  }
+}
+
+.hot-btn{
+  color: $white;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+
+  @media screen and (min-width: $max-sm + 1px){
+    display: none;
   }
 }
 

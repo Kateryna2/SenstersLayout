@@ -45,16 +45,31 @@
 
   @media screen and (min-width: $max-sm + 1px) {
     display: inline-block;
+  }
+}
 
+.social-icons-mobile{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  width: 40%;
+  padding-top: 40px;
+
+  @media screen and (min-width: $max-sm + 1px) {
+    display: none;
   }
 }
 
 .insta-icon {
-  margin-left: 40px;
+  @media screen and (min-width: $max-sm + 1px) {
+    margin-left: 40px;
+  }
+
 }
 
 .banner--top {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 
   &:before {
     content: ' ';
@@ -67,6 +82,7 @@
   }
 
   @media screen and (min-width: $max-sm + 1px){
+    margin-bottom: 100px;
   &:before {
     content: ' ';
     position: absolute;
@@ -80,7 +96,7 @@
 }
 
 .banner--down {
-  margin-top: 100px;
+  margin-top: 50px;
 
   &:before {
     content: ' ';
@@ -88,5 +104,9 @@
     background-size: cover;
     width: 35px;
     height: 40px;
+  }
+
+  @media screen and (min-width: $max-sm + 1px) {
+    margin-top: 100px;
   }
 }

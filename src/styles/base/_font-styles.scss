@@ -10,7 +10,12 @@
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
-  padding-bottom: 20px;
+  padding-bottom: 0;
+
+  @media screen and (min-width: $max-sm + 1px) {
+    padding-bottom: 20px;
+  }
+
 }
 
 .title--forms {
@@ -74,6 +79,7 @@
   line-height: 1.4;
   font-weight: bold;
   color: $white;
+  text-align: center;
 
   @media screen and (min-width: $max-md + 1px) {
     font-size: 100px;
