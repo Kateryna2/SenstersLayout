@@ -2,8 +2,15 @@
   //padding-top: 40px;
 }
 .form-group {
+width: 100%;
+  &:first-of-type{
+    padding-top: 60px;
+  }
+
+  @media screen and (min-width: $max-sm + 1px){
   width: calc(50% - 15px);
   padding-top: 60px;
+  }
 }
 
 .form-group-send {
@@ -59,7 +66,7 @@
 
 .btn__submit-big {
   width: 100%;
-  margin-top: 50px;
+  margin-top: 20px;
 
 
   &:hover {
@@ -78,18 +85,22 @@
       transition: opacity 0.8s;
     }
   }
+
+  @media screen and (min-width: $max-sm + 1px){
+    margin-top: 50px;
+  }
 }
 
 .form__submit-big {
   position: relative;
   width: 100%;
-  height: 227px;
+  height: 110px;
   font-family: Futura;
-  font-size: 120px;
+  font-size: 48px;
   font-weight: bold;
   background: -webkit-linear-gradient(69.18deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
   -webkit-background-clip: text;
-  -webkit-text-stroke: 4px transparent;
+  -webkit-text-stroke: 3px transparent;
   color: $white;
   border: none;
   z-index: 1;
@@ -97,6 +108,11 @@
 
   &[type=submit]:focus {
     outline: 0;
+  }
+  @media screen and (min-width: $max-sm + 1px){
+    font-size: 120px;
+    height: 227px;
+    -webkit-text-stroke: 4px transparent;
   }
 }
 

@@ -50,11 +50,16 @@ body {
   margin-left: auto;
   margin-right: auto;
 
+  padding-left: 15px;
+  padding-right: 15px;
+
   @media screen and (min-width: $max-sm + 1px) {
     max-width: 730px;
+    padding: 0;
   }
 
   @media screen and (min-width: $max-md + 1px) {
     max-width: 970px;
+    padding: 0;
   }
 }
