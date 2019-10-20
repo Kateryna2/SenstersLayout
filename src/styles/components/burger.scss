@@ -8,10 +8,20 @@
   margin: 0;
   outline: none;
   cursor: pointer;
+  display: none;
+
+  &-mobile {
+    display: unset;
+  }
 
   &:hover {
     color: #E0E0E0;
   }
+
+  @media screen and (min-width: $max-sm + 1px) {
+    display: unset;
+  }
+
 }
 
 .burger-line {
@@ -23,20 +33,45 @@
   transition: all .5s ease;
 
   &:first-child {
-    top: 5px;
+    top: 0;
 
     body.is-menu-open & {
-      top: 9px;
+      top: 0;
       transform: rotate(45deg);
     }
   }
 
+  @media screen and (min-width: $max-sm + 1px) {
+    &:first-child {
+      top: 5px;
+
+      body.is-menu-open & {
+        top: 9px;
+        transform: rotate(45deg);
+      }
+    }
+
+  }
+
   &:last-child {
-    bottom: 5px;
+    bottom: 6px;
 
     body.is-menu-open & {
-      bottom: 9px;
+      bottom: 0;
       transform: rotate(-45deg);
     }
   }
+
+  @media screen and (min-width: $max-sm + 1px) {
+    &:last-child {
+      bottom: 5px;
+
+      body.is-menu-open & {
+        bottom: 9px;
+        transform: rotate(-45deg);
+      }
+    }
+
+  }
+
 }

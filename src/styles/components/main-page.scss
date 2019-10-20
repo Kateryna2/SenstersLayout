@@ -1,49 +1,13 @@
-.main-title {
-  width: 100%;
-
-  @media screen and (min-width: $max-sm + 1px) {
-    max-width: 760px;
-  }
-
-  @media screen and (min-width: $max-lg + 1px) {
-    max-width: 1160px;
-  }
-}
-
-.title--banner-main {
-  display: block;
-
-  &:first-of-type {
-    text-align: start;
-  }
-
-  &:nth-of-type(2n) {
-    text-align: center;
-  }
-
-  &:last-of-type {
-    text-align: end;
-  }
-}
-
-.social-icons {
-  align-self: flex-start;
-  justify-items: flex-end;
-  padding: 150px 0 55px 70px;
-  display: inline-block;
-}
-
-.insta-icon {
-  margin-left: 40px;
-}
-
 .quote-text {
   display: block;
   background: linear-gradient(66.64deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
-  height: 490px;
   width: 100%;
-  padding-top: 175px;
-  padding-left: 100px;
+  padding: 50px 0 50px 50px;
+
+  @media screen and (min-width: $max-sm + 1px){
+    padding: 175px 0 150px 150px;
+  }
+
 }
 
 .title-vertical {
@@ -56,17 +20,27 @@
 }
 
 .quote {
-  display: flex;
-  max-width: 95%;
-  margin-left: auto;
+
+
+
+  @media screen and (min-width: $max-sm + 1px) {
+    display: flex;
+    max-width: 95%;
+    margin-left: auto;
+  }
 }
 
 .info-block {
   max-width: 1000px;
-  height: 400px;
-  margin-top: 155px;
+  margin-top: 60px;
   align-items: center;
   position: relative;
+  padding-left: 43px;
+
+  @media screen and (min-width: $max-sm + 1px){
+    margin-top: 155px;
+    padding-left: 43px;
+  }
 }
 
 .text--info-block {

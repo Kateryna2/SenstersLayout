@@ -1,18 +1,59 @@
-.banner{
+.banner {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
   background-color: $black;
-  height: 800px;
   padding: 0 15px;
+  height: 675px;
+
+  @media screen and (min-width: $max-sm + 1px) {
+    height: 750px;
+  }
+  @media screen and (min-width: $max-md + 1px) {
+    height: 800px;
+  }
 }
 
 .banner--main {
-  margin-bottom: 100px;
-  justify-content: flex-end;
+  margin-bottom: 80px;
+  justify-content: center;
   align-items: center;
+
+  @media screen and (min-width: $max-sm + 1px) {
+    justify-content: flex-end;
+    margin-bottom: 100px;
+
+  }
+}
+
+.banner--main-title {
+  width: 100%;
+
+  @media screen and (min-width: $max-sm + 1px) {
+    max-width: 760px;
+  }
+
+  @media screen and (min-width: $max-lg + 1px) {
+    max-width: 1160px;
+  }
+}
+
+.social-icons {
+  align-self: flex-start;
+  justify-items: flex-end;
+  padding: 100px 0 55px 70px;
+  display: none;
+
+  @media screen and (min-width: $max-sm + 1px) {
+    display: inline-block;
+
+  }
+}
+
+.insta-icon {
+  margin-left: 40px;
 }
 
 .banner--top {

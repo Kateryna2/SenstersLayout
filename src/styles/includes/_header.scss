@@ -1,6 +1,6 @@
 .header {
   position: fixed;
-  display: flex;
+  //display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
@@ -8,8 +8,36 @@
   left: 0;
   right: 0;
   background: $black;
-  padding: 60px 135px 30px 100px;
   z-index: 2;
+  padding: 40px 15px 75px 15px;
+  display: none;
+
+  @media screen and (min-width: $max-sm + 1px) {
+    display: flex;
+    padding: 40px 100px 10px 80px;
+  }
+  @media screen and (min-width: $max-md + 1px) {
+    padding: 60px 135px 30px 100px;
+    display: flex;
+  }
+
+}
+
+.header-mobile {
+  display: flex;
+  position: fixed;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: $black;
+  z-index: 2;
+  padding: 40px 15px 75px 15px;
+  @media screen and (min-width: $max-sm + 1px) {
+    display: none;
+  }
 }
 
 .menu {
@@ -19,12 +47,11 @@
   align-items: center;
   position: absolute;
   width: 100%;
-  height: 680px;
+  height: 100vh;
   background: $black;
   z-index: 1;
-  top: 117px;
-  font-size: 48px;
-  line-height: 64px;
+  font-size: 36px;
+  line-height: 1.3;
   font-weight: bold;
   opacity: 0;
   pointer-events: none;
@@ -33,6 +60,12 @@
   body.is-menu-open & {
     opacity: 1;
     pointer-events: auto;
+    height: 680px;
+  }
+
+  @media screen and (min-width: $max-md + 1px) {
+    font-size: 48px;
+    top: 117px;
   }
 }
 
