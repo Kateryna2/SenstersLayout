@@ -9,9 +9,6 @@
   height: 675px;
 
   @media screen and (min-width: $max-sm + 1px) {
-    height: 750px;
-  }
-  @media screen and (min-width: $max-md + 1px) {
     height: 800px;
   }
 }
@@ -66,7 +63,19 @@
     background-size: cover;
     width: 35px;
     height: 40px;
+    top: 600px;
+  }
+
+  @media screen and (min-width: $max-sm + 1px){
+  &:before {
+    content: ' ';
+    position: absolute;
+    background-image: url(../img/sprites/sprite.svg#arrow-down);
+    background-size: cover;
+    width: 35px;
+    height: 40px;
     top: 730px;
+  }
   }
 }
 
