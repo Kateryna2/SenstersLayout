@@ -136,13 +136,18 @@
 
 .title-colours--medium {
   font-size: 48px;
-  line-height: 64px;
+  line-height: 1.3333;
   font-weight: bold;
   background: linear-gradient(29.72deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
   width: fit-content;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 30px;
+
+  @media screen and (max-width: $max-xs) {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
 }
 .title-colours--big-vertical{
   font-size: 48px;

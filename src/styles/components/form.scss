@@ -48,6 +48,10 @@ width: 100%;
   margin-bottom: 45px;
   line-height: 28px;
 
+  @media screen and (max-width: $max-xs) {
+    margin-bottom: 35px;
+  }
+
   &:focus {
     outline: 0;
   }

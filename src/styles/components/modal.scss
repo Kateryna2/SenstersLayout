@@ -11,13 +11,16 @@
   top: 140px;
   opacity: 0;
   pointer-events: none;
-  z-index: 3;
+  z-index: 6;
   transition: opacity .35s ease;
 
-  &.modal-wide{
+  &.modal-wide {
     width: 100%;
-    //height: 100vh;
-    padding: 40px 40px;
+    padding: 40px 15px;
+
+    @media screen and (min-width: $max-xs + 1px) {
+      padding: 40px 40px;
+    }
   }
 
   &.is-open {
@@ -39,8 +42,15 @@
   }
 }
 
+.modal--services {
+  @media screen and (max-width: $max-xs) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
 
-.modal-bg{
+
+.modal-bg { 
   position: fixed;
   top:0;
   bottom: 0;
@@ -49,7 +59,7 @@
   background: rgba(0, 0, 0, 0.3);
   opacity: 0;
   pointer-events: none;
-  z-index: 2;
+  z-index: 5;
 
   .is-modal-open & {
     opacity: 1;
