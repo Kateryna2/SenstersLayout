@@ -8,7 +8,7 @@
   left: 0;
   right: 0;
   background: $black;
-  z-index: 2;
+  z-index: 999;
   padding: 40px 15px 75px 15px;
   display: none;
 
@@ -33,7 +33,7 @@
   left: 0;
   right: 0;
   background: $black;
-  z-index: 2;
+  z-index: 999;
   padding: 40px 15px 40px 15px;
   @media screen and (min-width: $max-sm + 1px) {
     display: none;
