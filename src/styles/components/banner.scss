@@ -60,8 +60,12 @@
     display: none;
   }
 }
-
+.icon-mob{
+  display: inline-grid;
+  align-self: center;
+}
 .insta-icon {
+
   @media screen and (min-width: $max-sm + 1px) {
     margin-left: 40px;
   }
