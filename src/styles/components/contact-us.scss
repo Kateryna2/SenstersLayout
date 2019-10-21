@@ -1,12 +1,19 @@
 .title-colours-contacts {
   line-height: 34px;
   min-height: 68px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   padding: 0;
+
+  @media screen and (min-width: $max-md + 1px){
+    margin-bottom: 50px;
+  }
 }
 
 .title-colours-narrow {
+  width: 100%;
+  @media screen and (min-width: $max-md + 1px){
   width: 70%;
+  }
 }
 
 .contacts-list {

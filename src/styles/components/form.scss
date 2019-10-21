@@ -1,15 +1,22 @@
-.form{
-  //padding-top: 40px;
+.form--half-width{
+  width: 100%;
+
+  @media screen and (min-width: $max-md + 1px){
+  width: fit-content;
+  }
 }
 .form-group {
 width: 100%;
   &:first-of-type{
-    padding-top: 60px;
+    padding-top: 30px;
   }
 
   @media screen and (min-width: $max-sm + 1px){
   width: calc(50% - 15px);
   padding-top: 60px;
+    &:first-of-type{
+      padding-top: 60px;
+    }
   }
 }
 

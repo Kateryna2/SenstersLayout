@@ -7,7 +7,7 @@
   line-height: 1.3;
   font-weight: bold;
   max-width: 930px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
 
@@ -16,6 +16,7 @@
     text-align: center;
     padding-left: 0;
     padding-right: 0;
+    margin-bottom: 60px;
   }
 }
 
@@ -39,8 +40,10 @@
 
 .title-colours-normal{
   font-weight: normal;
+  font-size: 18px;
   @media screen and (min-width: $max-sm + 1px){
     font-weight: bold;
+    font-size: 24px;
   }
 }
 
