@@ -4,7 +4,7 @@
   background: transparent;
   border: none;
   font-weight: bold;
-  padding: 0 43px 0 0;
+  padding: 0 35px 0 0;
   margin: 0;
   outline: none;
   cursor: pointer;
@@ -14,15 +14,18 @@
     color: #E0E0E0;
   }
 
-  @media screen and (min-width: $max-sm + 1px) {
+  @media screen and (min-width: $max-md + 1px) {
     display: unset;
-  }
 
+  }
+  @media screen and (min-width: $max-lg + 1px){
+    padding: 0 43px 0 0;
+  }
 }
 
 .burger-mobile{
   display: unset;
-  @media screen and (min-width: $max-sm + 1px) {
+  @media screen and (min-width: $max-md + 1px) {
     display: none;
   }
 }
@@ -52,7 +55,7 @@
     }
   }
 
-  @media screen and (min-width: $max-sm + 1px) {
+  @media screen and (min-width: $max-md + 1px) {
     right: 0;
     &:first-child {
       top: 5px;

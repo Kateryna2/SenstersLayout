@@ -18,6 +18,7 @@
     @media screen and (min-width: $max-sm + 1px){
       font-size: 18px;
       color: $black;
+      width: 100%;
     }
     @media screen and (min-width: $max-md + 1px){
       font-size: 24px;
@@ -83,6 +84,8 @@
     padding: 55px 50px 55px 50px;
     width: 30%;
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 
     &:before {
       content: '';

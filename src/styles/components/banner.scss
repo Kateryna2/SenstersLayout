@@ -19,7 +19,6 @@
   align-items: center;
 
   @media screen and (min-width: $max-sm + 1px) {
-    justify-content: flex-end;
     margin-bottom: 100px;
 
   }
@@ -37,26 +36,26 @@
   }
 }
 
-.social-icons {
-  align-self: flex-start;
-  justify-items: flex-end;
-  padding: 100px 0 55px 70px;
-  display: none;
-
-  @media screen and (min-width: $max-sm + 1px) {
-    display: inline-block;
-  }
-}
+//.social-icons {
+//  align-self: flex-start;
+//  justify-items: flex-end;
+//  padding: 100px 0 55px 70px;
+//  display: none;
+//
+//  @media screen and (min-width: $max-md + 1px) {
+//    display: inline-block;
+//  }
+//}
 
 .social-icons-mobile{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-content: center;
-  width: 40%;
+  width: 180px;
   padding-top: 40px;
 
-  @media screen and (min-width: $max-sm + 1px) {
+  @media screen and (min-width: $max-md + 1px) {
     display: none;
   }
 }
@@ -66,7 +65,7 @@
 }
 .insta-icon {
 
-  @media screen and (min-width: $max-sm + 1px) {
+  @media screen and (min-width: $max-md + 1px) {
     margin-left: 40px;
   }
 

@@ -36,11 +36,19 @@
   }
 
   & .phone:before {
-    content: url("../img/sprites/sprite.svg#phone-icon");
+    content: url("../img/sprites/sprite.svg#phone-icon-color");
   }
 
   & .mail:before {
-    content: url("../img/sprites/sprite.svg#mail-icon");
+    content: url("../img/sprites/sprite.svg#mail-icon-color");
+  }
+
+  & .fb:before {
+    content: url("../img/sprites/sprite.svg#fb-icon-color");
+  }
+
+  & .insta:before {
+    content: url("../img/sprites/sprite.svg#insta-icon-color");
   }
 }
 
