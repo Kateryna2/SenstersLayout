@@ -8,9 +8,8 @@
   left: 0;
   right: 0;
   background: $black;
-  z-index: 999;
-  padding: 40px 15px 75px 15px;
-  display: none;
+  z-index: 4;
+  padding: 40px 15px 40px 15px;
 
   @media screen and (min-width: $max-sm + 1px) {
     display: flex;
@@ -23,22 +22,6 @@
 
 }
 
-.header-mobile {
-  display: flex;
-  position: fixed;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: $black;
-  z-index: 999;
-  padding: 40px 15px 40px 15px;
-  @media screen and (min-width: $max-sm + 1px) {
-    display: none;
-  }
-}
 
 .menu {
   display: flex;
