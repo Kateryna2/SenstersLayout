@@ -66,8 +66,12 @@ img.clients-logo {
   width: 100%;
   margin-top: 100px;
   margin-bottom: -100px;
-  background: linear-gradient(69.18deg, #00009A 20%, #EB3626 90%, #EB3423 100%);
+  background: linear-gradient(84.55deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
   padding-bottom: 120px;
+
+  @media screen and (min-width: $max-md + 1px){
+  background: linear-gradient(69.18deg, #00009A 20%, #EB3626 90%, #EB3423 100%);
+  }
 }
 
 .reviews-list-nav {
@@ -79,7 +83,7 @@ img.clients-logo {
 }
 
 .title--review {
-  padding: 65px 0 35px 43px;
+  padding: 65px 15px 35px 43px;
   @media screen and (min-width: $max-md + 1px) {
     padding: 127px 0 100px 135px;
   }
@@ -137,9 +141,6 @@ img.clients-logo {
   margin-right: auto;
 
 
-  @media screen and (min-width: 425px){
-    //width: 400px;
-  }
   @media screen and (min-width: $max-xs + 1px){
     width: 80%;
   }
