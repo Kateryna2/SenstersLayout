@@ -47,6 +47,52 @@
   }
 }
 
+
+.modal--cookies{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top:500px;
+  background: #242424;
+  width: 100%;
+  height: fit-content;
+  opacity: 1;
+  pointer-events: auto;
+  outline: none;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 0;
+
+
+  & .form__submit{
+    width: 170px;
+    margin-top: 0;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  & .text{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 250px;
+  }
+  @media screen and (min-width: $max-sm){
+    top:650px;
+  }
+  @media screen and (min-width: $max-md){
+    flex-direction: row;
+    top:750px;
+
+    & .text{
+      max-width: 500px;
+    }
+  }
+}
+
+.text--cookies{
+  text-decoration: underline;
+}
+
 .modal--services {
   @media screen and (max-width: $max-xs) {
     top: 50%;
