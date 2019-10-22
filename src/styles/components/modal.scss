@@ -48,11 +48,11 @@
 }
 
 
-.modal--cookies{
+.modal--cookies-open{
   display: flex;
   flex-direction: column;
   position: absolute;
-  top:500px;
+  top:485px;
   background: #242424;
   width: 100%;
   height: fit-content;
@@ -77,11 +77,11 @@
     max-width: 250px;
   }
   @media screen and (min-width: $max-sm){
-    top:650px;
+    top:610px;
   }
   @media screen and (min-width: $max-md){
     flex-direction: row;
-    top:750px;
+    top:695px;
 
     & .text{
       max-width: 500px;
@@ -89,6 +89,9 @@
   }
 }
 
+.modal--cookies{
+  opacity: 0;
+}
 .text--cookies{
   text-decoration: underline;
 }
