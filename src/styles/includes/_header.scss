@@ -17,7 +17,6 @@
 
 }
 
-
 .menu {
   display: flex;
   flex-direction: column;
@@ -96,55 +95,6 @@
     display: none;
   }
 }
-
-//.contacts-list-in-menu {
-//  display: none;
-//
-//  @media screen and (min-width: $max-md + 1px) {
-//    display: flex;
-//    width: 100%;
-//    padding-top: 60px;
-//    position: relative;
-//
-//
-//    & .list-item-in-menu a {
-//      color: $white;
-//      font-size: 16px;
-//      font-weight: normal;
-//    }
-//
-//
-//
-//& .list-item-in-menu {
-//  padding-left: 50px;
-//  padding-bottom: 43px;
-//  position: relative;
-//}
-//
-//& .list-item-in-menu:before {
-//  position: absolute;
-//  width: 26px;
-//  left: 0;
-//  top: -5px;
-//}
-//
-//  & .phone:before {
-//    content: url("../img/sprites/sprite.svg#phone-icon-color");
-//  }
-//
-//  & .mail:before {
-//    content: url("../img/sprites/sprite.svg#mail-icon-color");
-//  }
-//
-//  & .fb:before {
-//    content: url("../img/sprites/sprite.svg#fb-icon-color");
-//  }
-//
-//  & .insta:before {
-//    content: url("../img/sprites/sprite.svg#insta-icon-color");
-//  }
-//  }
-//}
 
 .contacts-list-in-menu {
 

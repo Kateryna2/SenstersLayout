@@ -2,9 +2,12 @@ $('.js-reviews-list').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     centerMode: true,
-    arrows: false,
+    arrows: true,
+    prevArrow: '<button class="slick-prev" aria-label="Previous" type="button"><img src="../img/arrow-back.png" alt="previous"></button>',
+    nextArrow: '<button class="slick-next" aria-label="Next" type="button"><img src="../img/arrow-forward.png" alt="next"></button>',
     fade: true,
     infinite: true,
+    speed: 1000,
     asNavFor: '.js-reviews-list-nav'
 });
 $('.js-reviews-list-nav').slick({
@@ -12,11 +15,9 @@ $('.js-reviews-list-nav').slick({
     slidesToScroll: 1,
     asNavFor: '.js-reviews-list',
     dots: false,
-    arrows: true,
+    arrows: false,
     centerMode: true,
     focusOnSelect: true,
     infinite: true,
-    speed: 1000,
-    prevArrow: '<button class="slick-prev" aria-label="Previous" type="button"><img src="../img/arrow-back.png" alt="previous"></button>',
-    nextArrow: '<button class="slick-next" aria-label="Next" type="button"><img src="../img/arrow-forward.png" alt="next"></button>'
+    speed: 1000
 });

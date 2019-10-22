@@ -3,18 +3,6 @@
   @media screen and (min-width: 630px){
     justify-content: flex-start;
   }
-  // //margin-right: -2px;
-  // flex-direction: row;
-  // position: relative;
-  //justify-content: flex-start;
-
-  &:before {
-    //content: "";
-    // position: absolute;
-    //  width: 4px;
-    //  background-color: $white;
-    // height: 100%;
-  }
 }
 
 .clients-logo {
@@ -68,59 +56,6 @@
     }
   }
 }
-//.test {
-//  display: flex;
-//  justify-content: center;
-//  align-content: center;
-//  text-align: center;
-//}
-//.clients-logo {
-//  width: 140px;
-//  height: 60px;
-//  padding: 15px 20px;
-//  margin-left: 5%;
-//  border-right: 1px solid #BDBDBD;
-//  &:nth-child(2n) {
-//    border-right: none;
-//  }
-//
-//
-//  @media screen and (min-width: $max-xs + 1px){
-//
-//
-//
-//  }
-//
-//  @media (min-width: 1200px) {
-//    &:nth-child(5n) {
-//     // border-right: none;
-//    }
-//
-//  }
-//
-//  @media (max-width: 1199px) and (min-width: 992px) {
-//
-//    &:nth-child(4n) {
-//     // border-right: none;
-//    }
-//  }
-//
-//  @media (max-width: 991px) and (min-width: 690px) {
-//
-//    &:nth-child(3n) {
-//     // border-right: none;
-//    }
-//  }
-//
-//  @media (max-width: 689px) and (min-width: 460px) {
-//
-//
-//
-//    //width: 230px;
-//   // height: 110px;
-//   // padding: 20px 50px;
-//  }
-
 
 img.clients-logo {
   object-fit: contain;
@@ -132,7 +67,6 @@ img.clients-logo {
   margin-top: 100px;
   margin-bottom: -100px;
   background: linear-gradient(69.18deg, #00009A 20%, #EB3626 90%, #EB3423 100%);
-  //height: 900px;
   padding-bottom: 120px;
 }
 
@@ -152,7 +86,6 @@ img.clients-logo {
 }
 
 .review-card {
-  height: 476px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   color: $white;
@@ -199,13 +132,27 @@ img.clients-logo {
 .reviews-list {
   position: relative;
   z-index: 2;
-  width: 570px;
+  width: 95%;
   margin-left: auto;
   margin-right: auto;
+
+
+  @media screen and (min-width: 425px){
+    //width: 400px;
+  }
+  @media screen and (min-width: $max-xs + 1px){
+    width: 80%;
+  }
+  @media screen and (min-width: 1190px){
+    width: 520px;
+  }
+  @media screen and (min-width: 1400px){
+    width: 570px;
+  }
 }
 
 .reviews-list-nav {
-
+display: none;
   .slick-slide {
 
     .review-card {
@@ -219,6 +166,10 @@ img.clients-logo {
       }
     }
   }
+
+  @media screen and (min-width: $max-lg + 1px){
+   display: unset;
+  }
 }
 
 .slick-slide {
@@ -228,8 +179,8 @@ img.clients-logo {
 
 button.slick-prev.slick-arrow {
   position: absolute !important;
-  top: 130px;
-  left: calc(50% - 330px);
+  left: calc(50% - 100px);
+  bottom: -40px;
   background: none;
   border: none;
   z-index: 999;
@@ -237,18 +188,27 @@ button.slick-prev.slick-arrow {
   &:focus {
     outline: none;
   }
+  @media screen and (min-width: 1400px){
+    top: -170px;
+    left: calc(50% - 330px);
+  }
 }
 
 button.slick-next.slick-arrow {
   position: absolute !important;
-  top: 130px;
-  left: calc(50% + 285px);
+  left: calc(50% + 40px);
+  bottom: -40px;
   background: none;
   border: none;
   z-index: 999;
 
   &:focus {
     outline: none;
+  }
+
+  @media screen and (min-width: 1400px){
+    top: -170px;
+    left: calc(50% + 285px);
   }
 }
 
