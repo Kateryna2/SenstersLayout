@@ -9,10 +9,12 @@
   background: $black;
   z-index: 4;
   padding: 40px 15px 40px 15px;
+  font-size: 0;
 
   @media screen and (min-width: $max-md + 1px) {
     padding: 60px 135px 30px 100px;
     display: flex;
+    font-size: 16px;
   }
 
 }
@@ -144,3 +146,19 @@
   }
 }
 
+.header__link {
+  color: $white;
+  font-weight: bold;
+  padding: 0 35px 0 0;
+  background: transparent;
+  border: none;
+  border-radius: none;
+}
+
+.header__wrapper {
+  margin-left: auto;
+  @media screen and (max-width: $max-md) {
+    display: none;
+
+  }
+}
