@@ -106,7 +106,7 @@
     display: flex;
     width: 100%;
     padding-top: 60px;
-    justify-content: space-around ;
+    justify-content: space-around;
 
 
     & .list-item-in-menu {
@@ -152,7 +152,11 @@
   padding: 0 35px 0 0;
   background: transparent;
   border: none;
-  border-radius: none;
+
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .header__wrapper {

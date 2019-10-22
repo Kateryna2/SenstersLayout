@@ -1,30 +1,32 @@
-.form--half-width{
+.form--half-width {
   width: 100%;
 
-  @media screen and (min-width: $max-md + 1px){
-  width: fit-content;
+  @media screen and (min-width: $max-md + 1px) {
+    width: fit-content;
   }
 }
+
 .form-group {
-width: 100%;
-  &:first-of-type{
+  width: 100%;
+
+  &:first-of-type {
     padding-top: 30px;
   }
 
-  @media screen and (min-width: $max-sm + 1px){
-  width: calc(50% - 15px);
-  padding-top: 60px;
-    &:first-of-type{
+  @media screen and (min-width: $max-sm + 1px) {
+    width: calc(50% - 15px);
+    padding-top: 60px;
+    &:first-of-type {
       padding-top: 60px;
     }
   }
 }
 
-.form-group-careers{
+.form-group-careers {
   padding-left: 15px;
   padding-right: 15px;
 
-  @media screen and (min-width: $max-sm + 1px){
+  @media screen and (min-width: $max-sm + 1px) {
     padding-left: 0;
     padding-right: 0;
   }
@@ -32,8 +34,8 @@ width: 100%;
 }
 
 .form-group-send {
-  width: 100%;
-  @media screen and (min-width: $max-sm + 1px){
+  width: 90%;
+  @media screen and (min-width: $max-sm + 1px) {
     width: 370px;
   }
 }
@@ -95,6 +97,9 @@ width: 100%;
 
 
   &:hover {
+
+    box-shadow: 0 0 10px rgba($black, .6);
+
     &:before {
       content: '';
       position: absolute;
@@ -111,7 +116,7 @@ width: 100%;
     }
   }
 
-  @media screen and (min-width: $max-sm + 1px){
+  @media screen and (min-width: $max-sm + 1px) {
     margin-top: 50px;
   }
 }
@@ -134,7 +139,12 @@ width: 100%;
   &[type=submit]:focus {
     outline: 0;
   }
-  @media screen and (min-width: $max-sm + 1px){
+
+  &:hover {
+    box-shadow: 0 0 10px rgba($black, .6);
+  }
+
+  @media screen and (min-width: $max-sm + 1px) {
     font-size: 120px;
     height: 227px;
     -webkit-text-stroke: 4px transparent;
@@ -172,6 +182,7 @@ width: 100%;
   .file-selected + & {
     color: $black;
   }
+
   &:after {
     content: url("../img/sprites/sprite.svg#pin");
     position: absolute;

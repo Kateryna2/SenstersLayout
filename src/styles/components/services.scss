@@ -80,6 +80,10 @@
     transition: opacity .5s ease;
   }
 
+  &:hover{
+    box-shadow: 0 0 10px rgba($black, .6);
+  }
+
   @media screen and (min-width: $max-sm + 1px){
     padding: 55px 50px 55px 50px;
     width: 30%;

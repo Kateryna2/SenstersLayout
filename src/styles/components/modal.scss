@@ -7,12 +7,13 @@
   padding: 80px 0;
   background: $white;
   outline: solid 1px #00009A;
-  width: 570px;
-  top: 140px;
+  width: 100%;
   opacity: 0;
   pointer-events: none;
   z-index: 6;
   transition: opacity .35s ease;
+  top: 50%;
+  transform: translateY(-50%);
 
   &.modal-wide {
     width: 100%;
@@ -39,6 +40,10 @@
       margin-left: -482px;
       padding: 80px 80px;
     }
+  }
+
+  @media screen and (max-width: $max-xs) {
+
   }
 }
 
@@ -104,7 +109,7 @@
 }
 
 .btn--go-back {
-  width: 370px;
+  width: 90%;
   margin-top: 60px;
 
   &:hover a{
@@ -118,5 +123,9 @@
     width: fit-content;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  @media screen and (min-width: $max-xs + 1px){
+    width: 370px;
   }
 }

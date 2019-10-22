@@ -4,7 +4,7 @@ const $filledTitle = $('.js-filled-title');
 
 $fillInput.on('click', function() {
   let $this = $(this);
-  let thisService = $this.find('.title').html();
+  let thisService =  $this.parent().find('.js-title').html();
 
   $filledInput.val(thisService);
   $filledTitle.html(thisService);
