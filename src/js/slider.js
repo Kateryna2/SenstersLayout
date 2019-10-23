@@ -21,3 +21,9 @@ $('.js-reviews-list-nav').slick({
     infinite: true,
     speed: 1000
 });
+
+
+
+
+
+
