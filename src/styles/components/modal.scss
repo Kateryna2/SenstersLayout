@@ -178,3 +178,16 @@
     width: 370px;
   }
 }
+
+.cookies{
+  margin-top: 50px;
+
+  & .text-bold {
+    padding: 20px 0;
+  }
+
+  &-list {
+    list-style-type: disc;
+    margin-left: 30px;
+  }
+}
