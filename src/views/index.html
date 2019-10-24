@@ -31,10 +31,15 @@
     </div>
     <section class="info-block-section">
         <h3 class="title-colours--big title-info-block">why us</h3>
+        <div class="info-block-scroll">
+            <a href="#first" class="info-block-scroll--number js-info-block-number is-active">01</a>
+            <a href="#second" class="info-block-scroll--number js-info-block-number transparent">02</a>
+            <a href="#third" class="info-block-scroll--number js-info-block-number">03</a>
+        </div>
         <div class="flex-container info-block js-info-block">
 
             <div class="container info-block--inside">
-                <div class="text text--info-block text--info-block--first">
+                <div class="text text--info-block text--info-block--first js-text-infoblock" id="first">
                     <h3 class="title--small">Result-oriented</h3>
                     <p class="paragraph">At all stages of the work we show a specific quantitative indicator that
                         reflects the result of each individual channel and tool (cost per site visitor, request, call,
@@ -43,13 +48,13 @@
                         clients get sales increase from marketing investment, not just the number of clicks or CTR.</p>
 
                 </div>
-                <div class="text text--info-block text--info-block--second">
+                <div class="text text--info-block text--info-block--second js-text-infoblock" id="second">
                     <h3 class="title--small">Effective</h3>
                     <p class="paragraph">We get acquainted with your business processes and choose the most effective
                         digital channels to boost your results.</p>
                     <p class="paragraph">We identify the main business goals and provide the tools to achieve them.</p>
                 </div>
-                <div class="text text--info-block text--info-block--third">
+                <div class="text text--info-block text--info-block--third js-text-infoblock" id="third">
                     <h3 class="title--small">Transparent</h3>
                     <p class="paragraph">Reasonable pricing model based on the number of hours spent by the team.</p>
                     <p class="paragraph">No hidden or extra fees. All media spendings are paid directly from you to the
@@ -59,12 +64,13 @@
                 </div>
             </div>
         </div>
+
     </section>
 
 
 </main>
 <section class="banner banner--down">
-    <a href="services.html#" class="title--banner-down">services</a>
+    <a href="services.html" class="title--banner-down">services</a>
 </section>
 //= includes/footer.html
 //= includes/scripts.html

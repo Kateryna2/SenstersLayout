@@ -60,12 +60,17 @@
 
 
     body.is-menu-open & {
-      height: 780px;
+      height: 100vh;
     }
   }
 }
 
-
+.info-block-section-navigation a{
+  color: blue;
+  &.active{
+    color: #EB3423;
+  }
+}
 .menu-item {
   color: $white;
   padding-bottom: 30px;

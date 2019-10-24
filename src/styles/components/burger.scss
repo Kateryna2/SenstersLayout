@@ -9,9 +9,6 @@
   outline: none;
   cursor: pointer;
 
-  &:hover {
-    color: #E0E0E0;
-  }
 
   @media screen and (min-width: $max-lg + 1px){
     padding: 0 43px 0 0;

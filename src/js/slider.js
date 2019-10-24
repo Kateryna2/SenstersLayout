@@ -24,6 +24,38 @@ $('.js-reviews-list-nav').slick({
 
 
 
+// const $slider = $('.info-block--inside');
+// $slider
+//     .on('init', () => {
+//         mouseWheel($slider);
+//     })
+//     .slick({
+//         slidesToShow: 1,
+//         slidesToScroll: 1,
+//         dots: false,
+//         vertical: true,
+//         verticalScrolling: true,
+//         infinite: false,
+//         arrows: false,
+//         speed: 1000
+//     });
+//
+// function mouseWheel($slider) {
+//     $($slider).on('wheel', {$slider: $slider}, mouseWheelHandler);
+// }
+//
+// function mouseWheelHandler(event) {
+//     event.preventDefault();
+//     const $slider = event.data.$slider;
+//     const delta = event.originalEvent.deltaY;
+//     if (delta > 0) {
+//         $slider.slick('slickNext');
+//     } else {
+//         $slider.slick('slickPrev');
+//     }
+// }
+
+
 
 
 

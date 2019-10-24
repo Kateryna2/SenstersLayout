@@ -30,40 +30,69 @@
 
 .info-block-section {
   position: relative;
+
+
 }
 
 .title-info-block {
   position: absolute;
   left: 400px;
   top: 250px;
+
+
 }
 
 .info-block {
-  margin-top: 60px;
+  margin-top: 160px;
   align-items: center;
   position: relative;
   padding-left: 43px;
-  height: 550px;
+  height: 450px;
   justify-content: flex-end;
+  width: 95%;
+  margin-right: 5%;
+  margin-bottom: 100px;
+
+
+  &::-webkit-scrollbar {
+    margin-right: 300px;
+    width: 4px;
+  }
+
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: linear-gradient(99.32deg, #00009A 47.45%, #EB3423 63.6%);;
+    outline: 1px solid slategrey;
+  }
+
 
   &--inside {
-    padding-top: 155px;
-    margin-right: 20%;
+    margin-right: 5%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: flex-end;
+
+
   }
 
   @media screen and (min-width: $max-sm + 1px) {
     padding-left: 43px;
     overflow-y: scroll;
+    scroll-behavior: smooth;
+    float: left;
+
+
   }
 }
 
+
 .text--info-block {
-  width: 500px;
-  height: 400px;
+  width: 500px !important;
+  height: 450px;
   font-size: 18px;
   line-height: 28px;
   font-weight: 100;
@@ -86,8 +115,8 @@
   }
 
   &--second {
-    margin-top: 100px;
-    margin-bottom: 50px;
+    margin-top: 30px;
+
 
     &:before {
       content: url("../img/sprites/sprite.svg#2");
@@ -101,13 +130,39 @@
   @media screen and (min-width: $max-md + 1px) {
     //margin-right: 100px;
 
-
   }
 }
+
+
+.info-block-scroll{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: absolute;
+  right: 3%;
+  top: 160px;
+  height: 450px;
+  justify-content: space-around;
+
+
+  & .info-block-scroll--number{
+    color: #CCCCCC;
+    font-size: 24px;
+    pointer-events: none;
+
+    &.transparent{
+      color: white;
+    }
+
+    &.is-active{
+      color: $black;
+    }
+  }
+}
+
 
 .paragraph {
   padding-bottom: 30px;
 }
-
 
 
