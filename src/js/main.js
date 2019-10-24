@@ -8,4 +8,4 @@ import './form';
 import './input-file';
 import './slider';
 import './fill-on-click';
-
+import './scroll-events';
