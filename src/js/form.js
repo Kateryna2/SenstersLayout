@@ -3,7 +3,7 @@ const $form = $('.js-form');
 $form.on('submit', function(e) {
   e.preventDefault();
 
-  sendAjaxSubscribeForm('', $(this));
+  sendAjaxSubscribeForm(`${document.location.origin}/wp-content/themes/sensters/php/mail.php`, $(this));
 });
 
 function sendAjaxSubscribeForm(url, $form) {
@@ -20,6 +20,9 @@ function sendAjaxSubscribeForm(url, $form) {
         $form.find('input').each(function() {
           $(this).val('');
         });      
+      },
+      error: function(error) {
+        console.log(error);
       }
   });
 }
