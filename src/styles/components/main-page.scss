@@ -34,9 +34,18 @@
 
 .title-info-block {
   position: absolute;
-  left: 400px;
-  top: 250px;
+  left: 100px;
+  top: 40px;
 
+  //@media screen and (min-width: $max-sm + 1px){
+  //left: 400px;
+  //top: 250px;
+  //}
+
+  @media screen and (min-width: $max-lg + 1px){
+    left: 400px;
+    top: 250px;
+  }
 
 }
 
@@ -44,17 +53,21 @@
   margin-top: 160px;
   align-items: center;
   position: relative;
-  padding-left: 43px;
-  height: 450px;
-  justify-content: flex-end;
-  width: 95%;
+  //padding-left: 43px;
+
+  justify-content: flex-start;
+
   margin-right: 5%;
   margin-bottom: 100px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  float: left;
 
 
   &::-webkit-scrollbar {
-    margin-right: 300px;
-    width: 4px;
+    margin-bottom: 300px;
+    height: 4px;
   }
 
   &::-webkit-scrollbar-track {
@@ -70,33 +83,56 @@
   &--inside {
     margin-right: 5%;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
     align-content: flex-end;
+    width: calc(100vh * 3);
 
 
+    @media screen and (min-width: $max-sm + 1px){
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: auto;
+    }
   }
 
   @media screen and (min-width: $max-sm + 1px) {
-    padding-left: 43px;
+    overflow-x: hidden;
     overflow-y: scroll;
     scroll-behavior: smooth;
     float: left;
+    width: 95%;
+    height: 450px;
+    justify-content: flex-end;
+    padding-left: 43px;
 
+    &::-webkit-scrollbar {
+      margin-right: 300px;
+      width: 4px;
+    }
 
+    &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: linear-gradient(99.32deg, #00009A 47.45%, #EB3423 63.6%);;
+      outline: 1px solid slategrey;
+    }
   }
 }
 
 
 .text--info-block {
-  width: 500px !important;
-  height: 450px;
+  width: 320px;
+ // height: 450px;
   font-size: 18px;
   line-height: 28px;
   font-weight: 100;
   position: relative;
   padding-top: 30px;
-  padding-left: 130px;
+  padding-left: 30px;
+  margin-right: 5%;
 
 
   &:before {
@@ -105,7 +141,7 @@
     width: 200px;
     z-index: -1;
     top: 0;
-    left: 0;
+    left: -40px;
   }
 
   &--first:before {
@@ -113,7 +149,10 @@
   }
 
   &--second {
+
+    @media screen and (min-width: $max-sm + 1px){
     margin-top: 30px;
+    }
 
 
     &:before {
@@ -121,12 +160,23 @@
     }
   }
 
-  &--third:before {
+  &--third {
+    margin-right: 0;
+          &:before {
     content: url("../img/sprites/sprite.svg#3");
+    margin-right: 0;
+  }
   }
 
-  @media screen and (min-width: $max-md + 1px) {
-    //margin-right: 100px;
+  @media screen and (min-width: $max-sm + 1px) {
+    width: 500px;
+    height: 450px;
+    margin-right: 0;
+    padding-left: 130px;
+
+    &:before {
+      left: 0;
+    }
 
   }
 }
@@ -135,12 +185,23 @@
 .info-block-scroll{
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   position: absolute;
-  right: 3%;
-  top: 160px;
+  right: 1%;
+  top: 650px;
   height: 450px;
+  width: 100%;
   justify-content: space-around;
+
+  @media screen and (min-width: $max-sm + 1px){
+    flex-direction: column;
+    width: auto;
+    top: 160px;
+  }
+
+  @media screen and (min-width: $max-lg + 1px){
+    right: 3%;
+  }
 
 
   & .info-block-scroll--number{
