@@ -64,18 +64,18 @@
 
   &:first-of-type {
     text-align: start;
-    animation: to-right 0.5s linear;
+    animation: to-right 3s linear;
   }
 
   &:nth-of-type(2n) {
     text-align: center;
     margin-left: -30px;
-    animation: to-left 0.5s linear;
+    animation: to-left 3s linear;
   }
 
   &:last-of-type {
     text-align: end;
-    animation: to-right 0.5s linear;
+    animation: to-right 3s linear;
   }
 
   &:hover {
@@ -91,8 +91,32 @@
     0% {
       transform: translateX(-200%);
     }
-    100% {
+    20% {
       transform: translateX(0%);
+    }
+    30%{
+      background: linear-gradient(29.72deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      opacity: 0.5;
+    }
+    60%{
+      background: linear-gradient(29.72deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      opacity: 1;
+    }
+    80%{
+      background: linear-gradient(29.72deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      opacity: 0.5;
+    }
+    100%{
+      background: $white;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      opacity: 0.9;
     }
   }
 
@@ -100,23 +124,35 @@
     0% {
       transform: translateX(200%);
     }
-    100% {
+    20% {
       transform: translateX(0%);
     }
-  }
-
-  @keyframes background-change {
-    0% {
+    30% {
       background: linear-gradient(29.72deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      opacity: 0.5;
     }
-    100% {
+    60%{
+      background: linear-gradient(29.72deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      opacity: 1;
+    }
+    80%{
+      background: linear-gradient(29.72deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      opacity: 0.5;
+    }
+    100%{
       background: $white;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      opacity: 0.9;
     }
   }
+
 
 }
 
