@@ -89,7 +89,7 @@
 
   @keyframes to-right {
     0% {
-      transform: translateX(-200%);
+      transform: translateX(-100%);
     }
     20% {
       transform: translateX(0%);
@@ -98,31 +98,26 @@
       background: linear-gradient(29.72deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      opacity: 0.5;
+      background-size: 100%;
     }
-    60%{
+    65%{
       background: linear-gradient(29.72deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      opacity: 1;
-    }
-    80%{
-      background: linear-gradient(29.72deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      opacity: 0.5;
+      background-size: 150%;
     }
     100%{
-      background: $white;
+      background: linear-gradient(29.72deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      opacity: 0.8;
+      background-size: 100%;
+
     }
   }
 
   @keyframes to-left {
     0% {
-      transform: translateX(200%);
+      transform: translateX(100%);
     }
     20% {
       transform: translateX(0%);
@@ -131,25 +126,20 @@
       background: linear-gradient(29.72deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      opacity: 0.5;
+      background-size: 100%;
     }
-    60%{
+    65%{
       background: linear-gradient(29.72deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      opacity: 1;
-    }
-    80%{
-      background: linear-gradient(29.72deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      opacity: 0.5;
+      background-size: 150%;
     }
     100%{
-      background: $white;
+      background: linear-gradient(29.72deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      opacity: 0.8;
+      background-size: 100%;
+
     }
   }
 
