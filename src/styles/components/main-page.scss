@@ -4,6 +4,15 @@
   width: 100%;
   padding: 50px 0 50px 50px;
 
+  background-size: 400% 100%;
+  animation: gradient 3s linear infinite;
+  animation-direction: alternate;
+
+  @keyframes gradient {
+    0% {background-position: 0}
+    100% {background-position: 100%}
+  }
+
   @media screen and (min-width: $max-sm + 1px) {
     padding: 175px 0 150px 150px;
   }
