@@ -9,10 +9,10 @@
 
   .title--small--black {
     transition: color .5s ease;
-    font-size: 18px;
+    font-size: 14px;
     z-index: 1;
     color: $white;
-    width: 50%;
+    width: 60%;
 
 
     @media screen and (min-width: $max-sm + 1px){
@@ -47,7 +47,7 @@
 .card-service {
   position: relative;
   z-index: 1;
-  padding: 30px 20px 20px 30px;
+  padding: 40px 20px 40px 30px;
   width: 100%;
 
   @media screen and (min-width: $max-sm + 1px){
@@ -60,9 +60,9 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   position: relative;
-  padding: 25px 40px 25px 30px;
+  padding: 25px 70px 25px 30px;
   z-index: 1;
   width: 100%;
   align-items: center;
@@ -118,16 +118,18 @@
   transition: opacity .5s ease;
   z-index: 1;
   padding-left: 3px;
+  font-size: 14px;
 
   &:after {
     content: url("../img/sprites/sprite.svg#arrow-right");
     width: 30px;
     position: absolute;
-    left: 100px;
+    left: 80px;
   }
 
   @media screen and (min-width: $max-sm + 1px){
     opacity: 0;
+    font-size: 18px;
 
   .card:hover & {
     opacity: 1;
