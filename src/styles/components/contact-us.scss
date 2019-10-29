@@ -22,6 +22,10 @@
     padding-left: 50px;
     padding-bottom: 43px;
     position: relative;
+
+    &:hover{
+      transform: scale(1.1);
+    }
   }
 
   & .list-item:before {

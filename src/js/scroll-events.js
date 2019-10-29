@@ -35,26 +35,26 @@ $infoBlock.on('wheel', function () {
 });
 
 
-$(window).on('scroll touchmove mousewheel', function () {
-
-    if ($(window).scrollTop() >= $('.quote').outerHeight() + $('.banner').outerHeight() ) {
-        $body.css({
-            'overflow': 'hidden',
-            'height': '100%',
-            'width': '100%'
-        });
-
-        if ($( '#end' ).hasClass('is-active') || $( '#begin' ).hasClass('is-active')) {
-            $body.css({
-                'overflow': 'auto',
-                'height': 'auto',
-                'width': 'auto'
-            });
-        }
-        }
-
-
-});
+// $(window).on('scroll touchmove mousewheel', function () {
+//
+//     if ($(window).scrollTop() >= $('.quote').outerHeight() + $('.banner').outerHeight() ) {
+//         $body.css({
+//             'overflow': 'hidden',
+//             'height': '100%',
+//             'width': '100%'
+//         });
+//
+//         if ($( '#end' ).hasClass('is-active') || $( '#begin' ).hasClass('is-active')) {
+//             $body.css({
+//                 'overflow': 'auto',
+//                 'height': 'auto',
+//                 'width': 'auto'
+//             });
+//         }
+//         }
+//
+//
+// });
 
 
 // function infoBlockAnimation() {
