@@ -18,6 +18,12 @@ $modalClose.on('click', function() {
 });
 
 $cookiesClose.on('click', function() {
-  $cookies.addClass('modal--cookies');
+  $cookies.removeClass('is-open');
+  $.cookie('cookies-submit', '1');
 });
 
+if($.cookie('cookies-submit') === '1') {
+  $cookies.removeClass('is-open');
+} else {
+  $cookies.addClass('is-open');
+}

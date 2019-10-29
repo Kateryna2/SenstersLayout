@@ -48,7 +48,7 @@
 }
 
 
-.modal--cookies-open{
+.modal--cookies {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -56,12 +56,17 @@
   background: #242424;
   width: 100%;
   height: fit-content;
-  opacity: 1;
-  pointer-events: auto;
   outline: none;
   justify-content: center;
   align-items: center;
   padding: 18px 0;
+  opacity: 0;
+  pointer-events: none;
+
+  &.is-open {
+    opacity: 1;
+    pointer-events: auto;
+  }
 
 
   & .form__submit{
@@ -89,9 +94,6 @@
   }
 }
 
-.modal--cookies{
-  opacity: 0;
-}
 .text--cookies{
   text-decoration: underline;
 }
