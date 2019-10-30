@@ -167,18 +167,24 @@
   color: $white;
   text-align: center;
 
-  @media screen and (min-width: $max-md + 1px) {
-    font-size: 100px;
-  }
-
 
   &:hover {
     background: linear-gradient(29.72deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
     -webkit-background-clip: text;
-    -webkit-text-stroke: 4px transparent;
+    -webkit-text-stroke: 2px transparent;
     color: $black;
     transition: 0.5s;
   }
+
+
+  @media screen and (min-width: $max-md + 1px) {
+    font-size: 100px;
+
+    &:hover{
+      -webkit-text-stroke: 4px transparent;
+    }
+  }
+
 }
 
 .title-colours {
@@ -241,6 +247,17 @@
   }
   @media screen and (min-width: $max-lg + 1px) {
     font-size: 100px;
+  }
+}
+
+.title-white--medium {
+  font-size: 48px;
+  line-height: 1.3;
+  font-weight: bold;
+  color: $white;
+
+  @media screen and (min-width: $max-md + 1px) {
+    font-size: 72px;
   }
 }
 

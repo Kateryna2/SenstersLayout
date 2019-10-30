@@ -4,15 +4,15 @@
   margin-bottom: 30px;
   padding: 0;
 
-  @media screen and (min-width: $max-md + 1px){
+  @media screen and (min-width: $max-md + 1px) {
     margin-bottom: 50px;
   }
 }
 
 .title-colours-narrow {
   width: 100%;
-  @media screen and (min-width: $max-md + 1px){
-  width: 70%;
+  @media screen and (min-width: $max-md + 1px) {
+    width: 70%;
   }
 }
 
@@ -23,8 +23,13 @@
     padding-bottom: 43px;
     position: relative;
 
-    &:hover{
-      transform: scale(1.1);
+    &:hover {
+      font-size: 110%;
+
+      &:before {
+        width: 28px;
+        top: -4px;
+      }
     }
   }
 
@@ -35,7 +40,7 @@
     top: -5px;
   }
 
-  & a{
+  & a {
     color: $black;
   }
 

@@ -83,8 +83,14 @@ img.clients-logo {
 }
 
 .title--review {
-  padding: 65px 15px 35px 43px;
+  padding-top: 65px;
+  padding-bottom: 35px;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+
   @media screen and (min-width: $max-md + 1px) {
+    width: 100%;
     padding: 127px 0 100px 135px;
   }
 }
@@ -144,7 +150,7 @@ img.clients-logo {
   @media screen and (min-width: $max-xs + 1px){
     width: 80%;
   }
-  @media screen and (min-width: 1190px){
+  @media screen and (min-width: 1200px){
     width: 520px;
   }
   @media screen and (min-width: 1400px){
@@ -189,7 +195,7 @@ button.slick-prev.slick-arrow {
   &:focus {
     outline: none;
   }
-  @media screen and (min-width: 1400px){
+  @media screen and (min-width: 1200px){
     top: -70px;
     left: calc(50% - 330px);
   }
@@ -207,7 +213,7 @@ button.slick-next.slick-arrow {
     outline: none;
   }
 
-  @media screen and (min-width: 1400px){
+  @media screen and (min-width: 1200px){
     top: -70px;
     left: calc(50% + 285px);
   }

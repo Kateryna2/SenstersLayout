@@ -14,7 +14,11 @@
   }
 
   @media screen and (min-width: $max-sm + 1px) {
-    padding: 175px 0 150px 150px;
+    padding: 120px 20px 120px 100px;
+  }
+
+  @media screen and (min-width: $max-md + 1px) {
+    padding: 175px 20px 150px 150px;
   }
 
 }
@@ -35,6 +39,9 @@
     max-width: 95%;
     margin-left: auto;
   }
+  @media screen and (min-width: $max-md + 1px){
+    max-width: 90%;
+  }
 }
 
 .info-block-section {
@@ -43,15 +50,11 @@
 
 .title-info-block {
   position: absolute;
-  left: 50px;
+  left: 15%;
   top: 40px;
 
-  @media screen and (min-width: $max-md + 1px){
-    left: 300px;
-  }
 
   @media screen and (min-width: $max-lg + 1px){
-    left: 400px;
     top: 250px;
   }
 
@@ -61,11 +64,11 @@
   margin-top: 160px;
   align-items: center;
   position: relative;
-  margin-right: 5%;
+  margin-right: 10%;
   margin-bottom: 100px;
   scroll-behavior: smooth;
   float: left;
-  width: 95%;
+  width: 90%;
 
   justify-content: flex-end;
   padding-left: 43px;
@@ -96,9 +99,14 @@
 
 
   @media screen and (min-width: $max-sm + 1px){
-
     overflow-y: scroll;
     height: 450px;
+  }
+
+  @media screen and (min-width: 1920px){
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
   }
 }
 
@@ -167,7 +175,7 @@
   flex-wrap: wrap;
   flex-direction: row;
   position: absolute;
-  right: 1%;
+  right: 5%;
   top: 650px;
   height: 450px;
   width: 100%;
@@ -181,7 +189,11 @@
   }
 
   @media screen and (min-width: $max-lg + 1px){
-    right: 3%;
+    right: 7%;
+  }
+
+  @media screen and (min-width: 1920px){
+    right: 13%;
   }
 
 
