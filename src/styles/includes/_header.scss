@@ -123,33 +123,70 @@
         font-weight: normal;
       }
 
-      &:hover{
-        transform: scale(1.1);
-      }
+
+    }
+    & .list-item-in-menu:hover > a:before{
+      opacity: 0;
+      transition: opacity 0.5s ease;
     }
 
-    & .list-item-in-menu:before {
+    & .list-item-in-menu:hover > a:after{
+      opacity: 1;
+      transition: opacity 0.5s ease;
+    }
+
+    & .list-item-in-menu a:before {
       position: absolute;
       width: 26px;
       left: 0;
-      top: 6px;
+      bottom: 3px;
+    }
+
+    & .list-item-in-menu a:after {
+      position: absolute;
+      width: 26px;
+      left: 0;
+      bottom: 3px;
     }
 
 
     & .phone:before {
       content: url("../img/sprites/sprite.svg#phone-icon-color");
+      opacity: 1;
+    }
+    & .phone:after {
+      content: url("../img/sprites/sprite.svg#phone-icon-color-h");
+      opacity: 0;
     }
 
     & .mail:before {
       content: url("../img/sprites/sprite.svg#mail-icon-color");
+      opacity: 1;
+    }
+
+    & .mail:after {
+      content: url("../img/sprites/sprite.svg#mail-icon-color-h");
+      opacity: 0;
     }
 
     & .fb:before {
       content: url("../img/sprites/sprite.svg#fb-icon-color");
+      opacity: 1;
+    }
+
+    & .fb:after {
+      content: url("../img/sprites/sprite.svg#fb-icon-color-h");
+      opacity: 0;
     }
 
     & .insta:before {
       content: url("../img/sprites/sprite.svg#insta-icon-color");
+      opacity: 1;
+    }
+
+    & .insta:after {
+      content: url("../img/sprites/sprite.svg#insta-icon-color-h");
+      opacity: 0;
     }
   }
 }
