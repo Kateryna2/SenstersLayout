@@ -87,11 +87,11 @@
   }
 
   &--inside {
-    margin-right: 5%;
+    padding-right: 30px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: flex-end;
+    align-items: flex-end;
     width: auto;
   }
 
