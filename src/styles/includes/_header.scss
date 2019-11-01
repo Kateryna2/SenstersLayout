@@ -84,7 +84,6 @@
   }
 }
 
-
 .hot-btn {
   color: $white;
   background: transparent;
@@ -161,7 +160,7 @@
   padding: 0 35px 0 0;
   background: transparent;
   border: none;
-
+  cursor: pointer;
 
   &:focus {
     outline: none;
