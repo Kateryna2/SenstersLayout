@@ -118,7 +118,7 @@
 
 .text-order {
   position: relative;
-  color: $black;
+  color: $white;
   opacity: 1;
   transition: color .5s ease;
   z-index: 1;
@@ -135,6 +135,7 @@
 
   @media screen and (min-width: $max-sm + 1px){
     font-size: 16px;
+    color: $black;
 
     &:after{
       position: absolute;

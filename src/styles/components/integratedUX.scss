@@ -5,6 +5,14 @@
   padding: 100px 0;
   background: linear-gradient(84.55deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
   height: fit-content;
+
+  & .container--narrow {
+    padding-right: 43px;
+
+    @media screen and (min-width: $max-sm + 1px){
+      padding-right: 200px;
+    }
+  }
 }
 
 .text-service-description {
@@ -24,11 +32,11 @@
     outline: 0;
   }
 
-  &:hover .text-on-btn{
+  &:hover .text-on-btn {
     color: $white;
   }
 
-  @media screen and (min-width: $max-sm + 1px){
+  @media screen and (min-width: $max-sm + 1px) {
     width: 100%;
   }
 }
@@ -40,7 +48,7 @@
   z-index: 2;
   padding: 20px 0 20px 15px;
 
-  @media screen and (min-width: $max-sm + 1px){
+  @media screen and (min-width: $max-sm + 1px) {
     padding: 46px 0 20px 100px;
   }
 
@@ -62,30 +70,41 @@
   text-align: left;
   z-index: 1;
 
-  @media screen and (min-width: $max-sm + 1px){
+  @media screen and (min-width: $max-sm + 1px) {
     font-size: 74px;
     padding-left: 95px;
     padding-bottom: 45px;
   }
-  @media screen and (min-width: $max-md + 1px){
+  @media screen and (min-width: $max-md + 1px) {
     font-size: 120px;
   }
 }
 
-.what-you-get{
+.what-you-get {
   padding-top: 90px;
   padding-bottom: 30px;
 }
 
-.col-1{
+.container-list {
+  &.container--narrow {
+    padding-left: 43px;
+    @media screen and (min-width: $max-sm + 1px) {
+      padding-left: 0;
+      padding-right: 200px;
+    }
+  }
+}
+
+.col-1 {
   width: 100%;
   padding-bottom: 30px;
-  @media screen and (min-width: $max-sm + 1px){
-    width: 50%;
+  @media screen and (min-width: $max-sm + 1px) {
+    width: auto;
   }
 
 }
-.col-2{
+
+.col-2 {
   width: 100%;
   padding-top: 50px;
 }
