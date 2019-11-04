@@ -7,7 +7,7 @@ $link.on('click', function() {
 
 $(window).on('load', function() {
   if($.cookie('handleScroll') === '1') {
-    $root.animate({scrollTop: $(window).height()}, 1600);
+    $root.animate({scrollTop: $('.banner').outerHeight() - $('.header').outerHeight()}, 1600);
     setTimeout(() => {
       $.cookie('handleScroll', '0');
     }, 400);
