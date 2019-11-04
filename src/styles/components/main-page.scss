@@ -56,11 +56,13 @@
 .title-info-block {
   position: relative;
   top: 0;
-  padding-left: 43px;
-  padding-bottom: 40px;
+  margin-left: 43px;
+  margin-bottom: 40px;
 
 
   @media screen and (min-width: $max-sm + 1px){
+    margin-left: 0;
+    margin-bottom: 0;
     top: 190px;
   }
 
@@ -116,7 +118,7 @@
   position: relative;
   padding-top: 30px;
   padding-left: 43px;
-  //margin-right: 5%;
+  padding-bottom: 50px;
 
 
   & p{
@@ -138,7 +140,7 @@
   &--second {
 
     @media screen and (min-width: $max-sm + 1px){
-    //margin-top: 30px;
+    padding-bottom: 0;
       width: 320px;
     }
 
@@ -161,6 +163,7 @@
     height: 350px;
     margin-right: 0;
     padding-left: 80px;
+    padding-bottom: 0;
 
     &:before {
       left: 0;
@@ -185,7 +188,7 @@
     display: flex;
     flex-direction: column;
     width: auto;
-    top: 230px;
+    top: 200px;
   }
 
   @media screen and (min-width: $max-lg + 1px){

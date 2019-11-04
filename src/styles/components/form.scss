@@ -35,6 +35,7 @@
 
 .form-group-send {
   width: 90%;
+  border-radius: 0;
   @media screen and (min-width: $max-sm + 1px) {
     width: 370px;
   }
@@ -49,6 +50,7 @@
   padding: 7px 0;
   margin-bottom: 45px;
   line-height: 28px;
+  border-radius: 0;
 
   @media screen and (max-width: $max-xs) {
     margin-bottom: 35px;
@@ -72,6 +74,7 @@
   font-weight: bold;
   cursor: pointer;
   transition: box-shadow .35s ease;
+  border-radius: 0;
 
   @keyframes hover-animation {
     0% {
@@ -94,10 +97,10 @@
 .btn__submit-big {
   width: 100%;
   margin-top: 20px;
+  border-radius: 0;
 
 
   &:hover {
-
 
 
     &:before {
@@ -125,16 +128,12 @@
   position: relative;
   width: 100%;
   height: 110px;
-  font-family: Futura;
-  font-size: 48px;
-  font-weight: bold;
+  cursor: pointer;
   background: -webkit-linear-gradient(69.18deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
   -webkit-background-clip: text;
-  -webkit-text-stroke: 3px transparent;
-  color: $white;
   border: none;
   z-index: 1;
-  cursor: pointer;
+  border-radius: 0;
 
   &[type=submit]:focus {
     outline: 0;
@@ -142,9 +141,13 @@
 
 
   @media screen and (min-width: $max-sm + 1px) {
-    font-size: 120px;
     height: 227px;
     -webkit-text-stroke: 4px transparent;
+  }
+
+  & .text-on-btn-big {
+    padding-left: 0;
+    padding-right: 2px;
   }
 }
 
@@ -160,10 +163,12 @@
   -webkit-text-fill-color: transparent;
   z-index: 1;
   cursor: pointer;
+  border-radius: 0;
 
   &[type=submit]:focus {
     outline: 0;
   }
+
 }
 
 .attach-file {
@@ -207,6 +212,7 @@
   height: 60px;
   width: 100%;
   cursor: pointer;
+  border-radius: 0;
 
   &:hover {
     &:before {
@@ -243,7 +249,7 @@
     }
   }
 
-  &:hover .form__send {
+  &:hover .title-colours--small {
     color: $white;
     background: none;
     -webkit-background-clip: text;
@@ -263,7 +269,7 @@
   width: fit-content;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
+  border-radius: 0;
 }
 
 

@@ -64,7 +64,7 @@
   font-weight: bold;
   background: -webkit-linear-gradient(69.18deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
   -webkit-background-clip: text;
-  -webkit-text-stroke: 4px transparent;
+  -webkit-text-stroke: 3px transparent;
   color: $white;
   border: none;
   text-align: left;
@@ -74,6 +74,7 @@
     font-size: 74px;
     padding-left: 95px;
     padding-bottom: 45px;
+    -webkit-text-stroke: 4px transparent;
   }
   @media screen and (min-width: $max-md + 1px) {
     font-size: 120px;
