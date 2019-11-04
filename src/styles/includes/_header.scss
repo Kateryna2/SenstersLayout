@@ -65,6 +65,22 @@
   }
 }
 
+.lang {
+  display: flex;
+  flex-direction: row;
+  width: 114px;
+  justify-content: space-between;
+  font-size: 16px;
+  padding-top: 40px;
+  & a {
+    color: #828282;
+  }
+
+  & .is-active{
+    color: $white;
+  }
+}
+
 .info-block-section-navigation a{
   color: blue;
   &.active{

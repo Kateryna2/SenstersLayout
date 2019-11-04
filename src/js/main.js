@@ -11,3 +11,4 @@ import './slider';
 import './fill-on-click';
 import './scroll-events';
 import './scroll-on-load';
+import './lang-switch';
