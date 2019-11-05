@@ -40,6 +40,20 @@
   }
 }
 
+.card-service__details {
+  position: absolute;
+  bottom: 20px;
+  opacity: 0;
+  transition: all .35s ease;
+  background: linear-gradient(29.72deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  .card-service:hover & {
+    opacity: 1;
+  }
+}
+
 .card-price {
   display: flex;
   flex-wrap: wrap;
