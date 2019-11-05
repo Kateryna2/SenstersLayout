@@ -49,6 +49,23 @@
   }
 }
 
+.social-icons-mobile--desktop {
+  display: none;
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+
+  @media screen and (min-width: $max-md + 1px) {
+    display: flex !important;
+  }
+
+  a:last-child {
+    margin-right: auto;
+  }
+}
+
 .icon-mob {
   display: inline-grid;
   align-self: center;
