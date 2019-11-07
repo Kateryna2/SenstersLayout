@@ -8,13 +8,17 @@
   animation: gradient 5s linear infinite;
   animation-direction: alternate;
 
-  & p{
+  & p {
     padding-bottom: 20px;
   }
 
   @keyframes gradient {
-    0% {background-position: 25%}
-    100% {background-position: 50%}
+    0% {
+      background-position: 25%
+    }
+    100% {
+      background-position: 50%
+    }
   }
 
   @media screen and (min-width: $max-sm + 1px) {
@@ -43,7 +47,7 @@
     max-width: 95%;
     margin-left: auto;
   }
-  @media screen and (min-width: $max-md + 1px){
+  @media screen and (min-width: $max-md + 1px) {
     max-width: 88%;
   }
 }
@@ -59,8 +63,7 @@
   margin-left: 43px;
   margin-bottom: 40px;
 
-
-  @media screen and (min-width: $max-sm + 1px){
+  @media screen and (min-width: $max-sm + 1px) {
     margin-left: 0;
     margin-bottom: 0;
     top: 190px;
@@ -97,19 +100,11 @@
     width: auto;
   }
 
-
-  @media screen and (min-width: $max-sm + 1px){
+  @media screen and (min-width: $max-sm + 1px) {
     overflow-y: scroll;
     height: 350px;
   }
-
-  //@media screen and (min-width: 1920px){
-  //  width: 70%;
-  //  margin-left: 10%;
-  //  margin-right: 20%;
-  //}
 }
-
 
 .text--info-block {
   font-size: 18px;
@@ -120,10 +115,10 @@
   padding-left: 43px;
   padding-bottom: 50px;
 
-
-  & p{
+  & p {
     padding-bottom: 20px;
   }
+
   &:before {
     content: url("../img/sprites/sprite.svg#1");
     position: absolute;
@@ -139,11 +134,10 @@
 
   &--second {
 
-    @media screen and (min-width: $max-sm + 1px){
-    padding-bottom: 0;
+    @media screen and (min-width: $max-sm + 1px) {
+      padding-bottom: 0;
       width: 320px;
     }
-
 
     &:before {
       content: url("../img/sprites/sprite.svg#2");
@@ -151,11 +145,10 @@
   }
 
   &--third {
-    //margin-right: 0;
-          &:before {
-    content: url("../img/sprites/sprite.svg#3");
-    //margin-right: 0;
-  }
+    &:before {
+      content: url("../img/sprites/sprite.svg#3");
+
+    }
   }
 
   @media screen and (min-width: $max-sm + 1px) {
@@ -172,8 +165,7 @@
   }
 }
 
-
-.info-block-scroll{
+.info-block-scroll {
   display: none;
   flex-wrap: wrap;
   flex-direction: row;
@@ -184,36 +176,25 @@
   width: 100%;
   justify-content: space-around;
 
-  @media screen and (min-width: $max-sm + 1px){
+  @media screen and (min-width: $max-sm + 1px) {
     display: flex;
     flex-direction: column;
     width: auto;
     top: 200px;
   }
 
-  @media screen and (min-width: $max-lg + 1px){
-    //right: 3%;
-  }
-
-  @media screen and (min-width: 1920px){
-    //right: 5%;
-  }
-
-
-  & .info-block-scroll--number{
+  & .info-block-scroll--number {
     color: #CCCCCC;
     font-size: 24px;
     pointer-events: none;
 
-    &.transparent{
+    &.transparent {
       color: white;
     }
 
-    &.is-active{
+    &.is-active {
       color: $black;
     }
   }
 }
-
-
 
