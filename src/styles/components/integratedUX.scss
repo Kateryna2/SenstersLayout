@@ -23,23 +23,6 @@
   cursor: default;
 }
 
-.btn__submit-big {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-
-  &:focus {
-    outline: 0;
-  }
-
-  &:hover .text-on-btn {
-    color: $white;
-  }
-
-  @media screen and (min-width: $max-sm + 1px) {
-    width: 100%;
-  }
-}
 
 .text-on-btn {
   color: $black;
