@@ -21,7 +21,7 @@ body {
 
   &.is-menu-open,
   &.is-modal-open {
-    position: fixed;
+    position: absolute;
     height: 100vh;
     width: 100%;
     overflow: hidden;
@@ -44,6 +44,10 @@ body {
   @media screen and (min-width: $max-lg + 1px) {
     max-width: 1170px;
   }
+}
+
+.container--relative {
+  position: relative;
 }
 
 .container--narrow {
