@@ -19,7 +19,7 @@ $modalClose.on('click', function() {
 
 $cookiesClose.on('click', function() {
   $cookies.removeClass('is-open');
-  $.cookie('cookies-submit', '1');
+  $.cookie('cookies-submit', '1', { path: '/' });
 });
 
 if($.cookie('cookies-submit') === '1') {
