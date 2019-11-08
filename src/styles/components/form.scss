@@ -2,7 +2,7 @@
   width: 100%;
 
   @media screen and (min-width: $max-md + 1px) {
-    width: fit-content;
+    max-width: 50%;
   }
 }
 
@@ -225,6 +225,7 @@
 }
 
 .btn__send {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -289,6 +290,16 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   border-radius: 0;
+
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
 }
 
 
