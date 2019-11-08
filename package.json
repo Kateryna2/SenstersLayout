@@ -10,7 +10,8 @@
 	"scripts": {
 		"dev": "gulp",
 		"build": "gulp prod --production",
-		"scripts": "gulp scripts --production"
+		"scripts": "gulp scripts --production",
+		"styles": "gulp styles --production"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.0.0",

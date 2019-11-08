@@ -38,6 +38,9 @@
   padding: 20px 0 90px 0;
 }
 
+$title-animation-time-1: 4.5s ease-in-out;
+$title-animation-time-2: 4.5s ease-in-out;
+
 .title--banner-main {
   position: relative;
   display: block;
@@ -75,29 +78,29 @@
 
   &:first-of-type {
     text-align: start;
-    animation: to-right 4.5s ease-out;
+    animation: to-right $title-animation-time-1;
 
     &:before {
-      animation: right-color-change 4.5s linear;      
+      animation: right-color-change $title-animation-time-2;      
     }
   }
 
   &:nth-of-type(2n) {
     text-align: center;
     margin-left: -30px;
-    animation: to-left 4.5s ease-out;
+    animation: to-left $title-animation-time-1;
 
     &:before {
-      animation: left-color-change 4.5s linear;      
+      animation: left-color-change $title-animation-time-2;      
     }
   }
 
   &:last-of-type {
     text-align: end;
-    animation: to-right 4.5s ease-out;
+    animation: to-right $title-animation-time-1;
 
     &:before {
-      animation: right-color-change 4.5s linear;      
+      animation: right-color-change $title-animation-time-2;      
     }
   }
 

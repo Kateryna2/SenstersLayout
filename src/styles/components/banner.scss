@@ -7,9 +7,22 @@
   background-color: $black;
   padding: 0 15px;
   height: 675px;
+  animation: pointer-prevent 4.5s linear;
 
   @media screen and (min-width: $max-sm + 1px) {
     height: 800px;
+  }
+}
+
+@keyframes pointer-prevent {
+  0% {
+    pointer-events: none;
+  }
+  99% {
+    pointer-events: none;
+  }
+  100% {
+    pointer-events: auto;
   }
 }
 
