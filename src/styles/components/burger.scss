@@ -1,22 +1,18 @@
 .burger {
   position: relative;
-  color: $white;
-  background: transparent;
+  background: $white;
   border: none;
   font-weight: bold;
   padding: 0 35px 0 0;
   margin: 0;
   outline: none;
   cursor: pointer;
+  transition: background .5s ease;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
 
   &:hover{
-    background: linear-gradient(29.72deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    & .burger-line{
-      background: linear-gradient(29.72deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
-    }
+    background: linear-gradient(150deg, #225AA4 22.49%, #EB3626 66.87%, #EB3423 80.43%);
   }
 
   @media screen and (min-width: $max-lg + 1px){
@@ -32,6 +28,9 @@
   background: $white;
   transition: all .5s ease;
 
+  .burger:hover & {
+    background: linear-gradient(150deg, #225AA4 22.49%, #EB3626 66.87%, #EB3423 80.43%);
+  }
 
   &:first-child {
     top: 7px;

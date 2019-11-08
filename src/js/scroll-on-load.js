@@ -1,4 +1,4 @@
-const $link = $('.banner--down a');
+const $link = $('.js-scroll-on-load');
 const $root = $('body,html');
 
 $link.on('click', function() {

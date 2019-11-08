@@ -12,8 +12,8 @@ function sendAjaxSubscribeForm(url, $form) {
       type: 'POST',
       dataType: 'html',
       data: $form.serialize(),
-      success: function success(response) {
-        $('body').removeClass('is-modal-open');
+      success: function success() {
+        $('body').addClass('is-modal-open');
         $('.modal.is-open').removeClass('is-open');
         $('#thank-you').addClass('is-open');
 

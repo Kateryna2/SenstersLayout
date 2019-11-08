@@ -6,7 +6,8 @@ const $cookiesClose = $('.js-cookies-close');
 const $cookies = $('.js-cookies');
 
 
-$modalCall.on('click', function() {
+$modalCall.on('click', function(e) {
+  e.preventDefault();
   let targetModal = $(this).data('modal');
   $body.toggleClass('is-modal-open');
   $(`#${targetModal}`).addClass('is-open');

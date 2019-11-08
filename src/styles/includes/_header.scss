@@ -93,7 +93,7 @@
   }
 
   &:hover {
-    background: linear-gradient(29.72deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
+    background: linear-gradient(150deg, #225AA4 22.49%, #EB3626 66.87%, #EB3423 80.43%);
     -webkit-background-clip: text;
     -webkit-text-stroke: 4px transparent;
     color: $black;
@@ -215,21 +215,58 @@
   color: $white;
   font-weight: bold;
   padding: 0 35px 0 0;
-  background: transparent;
+  background: $white;
   border: none;
   cursor: pointer;
+  transition: background .5s ease;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
 
   &:hover{
-    background: linear-gradient(29.72deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
+    background: linear-gradient(150deg, #225AA4 22.49%, #EB3626 66.87%, #EB3423 80.43%);
   }
 
   &:focus {
     outline: none;
   }
 }
+
+.header__link--insta {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url(../img/sprites/sprite.svg#insta-icon-2) no-repeat center;
+  background-size: cover;
+  padding: 0;
+  vertical-align: middle;
+  margin-right: 30px;
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: unset !important;
+
+  &:hover {
+    background: url(../img/sprites/sprite.svg#insta-icon-2-h) no-repeat center !important;
+    background-size: cover !important;
+  }
+}
+
+.header__link--fb {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url(../img/sprites/sprite.svg#fb-icon-2) no-repeat center;
+  background-size: cover;
+  padding: 0;
+  vertical-align: middle;
+  margin-right: 30px;
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: unset !important;
+
+  &:hover {
+    background: url(../img/sprites/sprite.svg#fb-icon-2-h) no-repeat center !important;
+    background-size: cover !important;
+  }
+}
+
 
 .header__wrapper {
   margin-left: auto;
