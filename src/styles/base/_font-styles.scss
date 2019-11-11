@@ -1,3 +1,6 @@
+$title-animation-time-1: 5s cubic-bezier(.35,-0.31,0,1.7);
+$title-animation-time-2: 5s ease-in-out;
+
 .title--small {
   font-weight: bold;
   color: $black;
@@ -37,9 +40,6 @@
   line-height: 28px;
   padding: 20px 0 90px 0;
 }
-
-$title-animation-time-1: 4.5s ease-in-out;
-$title-animation-time-2: 4.5s ease-in-out;
 
 .title--banner-main {
   position: relative;
