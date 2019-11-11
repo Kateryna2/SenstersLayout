@@ -7,18 +7,23 @@
   padding-top: 187px;
 }
 
-.page404-text {
-  max-width: 444px;
-  margin-left: auto;
-  margin-right: auto;
-}
+//.page404-text {
+//  max-width: 444px;
+//  margin-left: auto;
+//  margin-right: auto;
+//}
 
 .page404-title{
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
   font-size: 160px;
-  line-height: 130px;
+  line-height: 1.3;
+  font-weight: bold;
+  background: linear-gradient(29.72deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
+  width: fit-content;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .text--white-404{
@@ -33,7 +38,7 @@
 .btn--main-page {
   display: flex;
   justify-content: center;
-  width: 370px;
+  max-width: 370px;
   margin-right: auto;
   margin-left: auto;
   outline: none;
