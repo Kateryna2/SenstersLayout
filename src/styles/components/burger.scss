@@ -12,7 +12,7 @@
   -webkit-text-fill-color: transparent !important;
 
   &:hover{
-    background: linear-gradient(150deg, #225AA4 22.49%, #EB3626 66.87%, #EB3423 80.43%);
+    background: linear-gradient(150deg, #00009A 22.49%, #EB3626 66.87%, #EB3423 80.43%);
   }
 
   @media screen and (min-width: $max-lg + 1px){
@@ -29,7 +29,7 @@
   transition: all .5s ease;
 
   .burger:hover & {
-    background: linear-gradient(150deg, #225AA4 22.49%, #EB3626 66.87%, #EB3423 80.43%);
+    background: linear-gradient(150deg, #00009A 22.49%, #EB3626 66.87%, #EB3423 80.43%);
   }
 
   &:first-child {

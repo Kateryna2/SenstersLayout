@@ -243,7 +243,7 @@
   // transition: filter .35s ease;
   -webkit-background-clip: unset !important;
   -webkit-text-fill-color: unset !important;
-  filter: brightness(100);
+  filter: sepia(1) brightness(200);
 
   &:hover {
     background: url(../img/sprites/sprite.svg#insta-icon-2-h) no-repeat center;
@@ -256,7 +256,7 @@
   width: 18px;
   height: 18px;
   background: url(../img/sprites/sprite.svg#fb-icon-2-h) no-repeat center;
-  filter: brightness(100);
+  filter: sepia(1) brightness(200);
   background-size: cover !important;
   padding: 0;
   vertical-align: middle;
