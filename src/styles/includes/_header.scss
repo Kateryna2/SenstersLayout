@@ -93,7 +93,7 @@
   }
 
   &:hover {
-    background: linear-gradient(150deg, #225AA4 22.49%, #EB3626 66.87%, #EB3423 80.43%);
+    background: linear-gradient(150deg, #00009A 22.49%, #EB3626 66.87%, #EB3423 80.43%);
     -webkit-background-clip: text;
     -webkit-text-stroke: 4px transparent;
     color: $black;
@@ -223,7 +223,7 @@
   -webkit-text-fill-color: transparent !important;
 
   &:hover{
-    background: linear-gradient(150deg, #225AA4 22.49%, #EB3626 66.87%, #EB3423 80.43%);
+    background: linear-gradient(150deg, #00009A 22.49%, #EB3626 66.87%, #EB3423 80.43%);
   }
 
   &:focus {
@@ -235,17 +235,19 @@
   display: inline-block;
   width: 18px;
   height: 18px;
-  background: url(../img/sprites/sprite.svg#insta-icon-2) no-repeat center;
-  background-size: cover;
+  background: url(../img/sprites/sprite.svg#insta-icon-2-h) no-repeat center;
+  background-size: cover !important;
   padding: 0;
   vertical-align: middle;
   margin-right: 30px;
+  // transition: filter .35s ease;
   -webkit-background-clip: unset !important;
   -webkit-text-fill-color: unset !important;
+  filter: brightness(100);
 
   &:hover {
-    background: url(../img/sprites/sprite.svg#insta-icon-2-h) no-repeat center !important;
-    background-size: cover !important;
+    background: url(../img/sprites/sprite.svg#insta-icon-2-h) no-repeat center;
+    filter: brightness(1);
   }
 }
 
@@ -253,17 +255,19 @@
   display: inline-block;
   width: 18px;
   height: 18px;
-  background: url(../img/sprites/sprite.svg#fb-icon-2) no-repeat center;
-  background-size: cover;
+  background: url(../img/sprites/sprite.svg#fb-icon-2-h) no-repeat center;
+  filter: brightness(100);
+  background-size: cover !important;
   padding: 0;
   vertical-align: middle;
   margin-right: 30px;
+  // transition: filter .35s ease;
   -webkit-background-clip: unset !important;
   -webkit-text-fill-color: unset !important;
 
   &:hover {
-    background: url(../img/sprites/sprite.svg#fb-icon-2-h) no-repeat center !important;
-    background-size: cover !important;
+    background: url(../img/sprites/sprite.svg#fb-icon-2-h) no-repeat center;
+    filter: brightness(1);
   }
 }
 
