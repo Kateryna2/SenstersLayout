@@ -19,7 +19,8 @@ $('.js-reviews-list-nav').slick({
     centerMode: true,
     focusOnSelect: true,
     infinite: true,
-    speed: 1000
+    speed: 1000,
+    fade: false
 });
 
 
