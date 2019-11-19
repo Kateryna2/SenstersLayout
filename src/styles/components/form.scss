@@ -226,12 +226,16 @@
   cursor: pointer;
   border-radius: 0;
 
+  &:active,
+  &:focus{
+    outline: none;
+  }
+
   &:hover {
     &:before {
       content: '';
       position: absolute;
       background: linear-gradient(71.2deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
-      transition: background-color 0.5s;
     }
 
     &:after {
@@ -263,31 +267,11 @@
 
   &:hover .title-colours--small {
     color: $white;
-    background: none;
     -webkit-background-clip: text;
     -webkit-text-fill-color: $white;
   }
 }
 
-.form__send {
-  outline: 0;
-  border: none;
-  z-index: 3;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 0;
-
-  &:before {
-    content: '';
-    position: absolute;
-    z-index: 2;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-  }
-}
 
 
 
