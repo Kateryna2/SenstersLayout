@@ -44,28 +44,25 @@
 .banner--top {
   margin-bottom: 50px;
 
-  &:before {
-    content: ' ';
-    position: absolute;
-    background-image: url(../img/sprites/sprite.svg#arrow-down);
-    background-size: cover;
-    width: 35px;
-    height: 40px;
-    top: 600px;
-  }
-
   @media screen and (min-width: $max-sm + 1px) {
     margin-bottom: 100px;
-    &:before {
-      content: ' ';
-      position: absolute;
-      background-image: url(../img/sprites/sprite.svg#arrow-down);
-      background-size: cover;
-      width: 35px;
-      height: 40px;
-      top: 730px;
-    }
   }
+}
+
+.arrow-down{
+  position: absolute;
+  width: 35px;
+  height: 40px;
+  top: 600px;
+
+  @media screen and (min-width: $max-sm + 1px){
+    top: 730px;
+  }
+
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .banner--down {
