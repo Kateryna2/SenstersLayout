@@ -262,6 +262,7 @@ $title-animation-time-2: 5s ease-in-out;
   width: fit-content;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  z-index: 2;
 }
 
 .title-colours--medium {
