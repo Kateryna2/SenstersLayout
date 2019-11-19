@@ -1,27 +1,24 @@
 .info-block-section {
   position: relative;
-  padding-top: 100px;
+  padding-top: 150px;
 }
 
 .title-info-block {
-  position: relative;
-  top: 0;
+  position: absolute;
+  top: 50px;
   margin-left: 43px;
-  margin-bottom: 40px;
 
   @media screen and (min-width: $max-sm + 1px) {
     margin-left: 0;
     margin-bottom: 0;
-    top: 190px;
+    top: 250px;
   }
 }
 
 .info-block {
-  align-items: center;
   position: relative;
+  margin-left: auto;
   scroll-behavior: smooth;
-  width: 100%;
-  justify-content: flex-end;
 
   &::-webkit-scrollbar {
     width: 4px;
@@ -112,19 +109,16 @@
 .info-block-scroll {
   display: none;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   position: absolute;
   right: -35px;
-  top: 650px;
+  top: 150px;
   height: 350px;
-  width: 100%;
+  width: auto;
   justify-content: space-around;
 
   @media screen and (min-width: $max-sm + 1px) {
     display: flex;
-    flex-direction: column;
-    width: auto;
-    top: 200px;
   }
 
   & .info-block-scroll--number {
