@@ -1,4 +1,4 @@
-$title-animation-time-1: 5s cubic-bezier(.35,-0.31,0,1.7);
+$title-animation-time-1: 5s cubic-bezier(.35, -0.31, 0, 1.7);
 $title-animation-time-2: 5s ease-in-out;
 
 .title--small {
@@ -81,7 +81,7 @@ $title-animation-time-2: 5s ease-in-out;
     animation: to-right $title-animation-time-1;
 
     &:before {
-      animation: right-color-change $title-animation-time-2;      
+      animation: right-color-change $title-animation-time-2;
     }
   }
 
@@ -91,7 +91,7 @@ $title-animation-time-2: 5s ease-in-out;
     animation: to-left $title-animation-time-1;
 
     &:before {
-      animation: left-color-change $title-animation-time-2;      
+      animation: left-color-change $title-animation-time-2;
     }
   }
 
@@ -100,7 +100,7 @@ $title-animation-time-2: 5s ease-in-out;
     animation: to-right $title-animation-time-1;
 
     &:before {
-      animation: right-color-change $title-animation-time-2;      
+      animation: right-color-change $title-animation-time-2;
     }
   }
 
@@ -154,7 +154,7 @@ $title-animation-time-2: 5s ease-in-out;
   }
 
   @keyframes left-color-change {
-    0%{
+    0% {
       background-position: center;
       opacity: 0;
     }
@@ -164,14 +164,14 @@ $title-animation-time-2: 5s ease-in-out;
     20% {
       opacity: 1;
     }
-    50%{
+    50% {
       background-size: 150% !important;
       background-position: left;
     }
     90% {
       opacity: 1;
     }
-    100%{
+    100% {
       background-size: 100% !important;
       opacity: 0;
       background-position: right;
@@ -179,7 +179,7 @@ $title-animation-time-2: 5s ease-in-out;
   }
 
   @keyframes right-color-change {
-    0%{
+    0% {
       background-position: center;
       opacity: 0;
     }
@@ -189,13 +189,13 @@ $title-animation-time-2: 5s ease-in-out;
     20% {
       opacity: 1;
     }
-    50%{
+    50% {
       background-position: right;
     }
     90% {
       opacity: 1;
     }
-    100%{
+    100% {
       background-position: left;
       opacity: 0;
     }
@@ -223,7 +223,6 @@ $title-animation-time-2: 5s ease-in-out;
   color: $white;
   text-align: center;
 
-
   &:hover {
     background: linear-gradient(29.72deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
     -webkit-background-clip: text;
@@ -232,15 +231,17 @@ $title-animation-time-2: 5s ease-in-out;
     transition: 0.5s;
   }
 
-
   @media screen and (min-width: $max-md + 1px) {
     font-size: 100px;
 
-    &:hover{
+    &:hover {
       -webkit-text-stroke: 4px transparent;
     }
   }
+}
 
+.title--banner.title--banner-down {
+  cursor: default;
 }
 
 .title-colours {
@@ -251,10 +252,6 @@ $title-animation-time-2: 5s ease-in-out;
   width: fit-content;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
-  @media screen and (min-width: $max-sm + 1px) {
-    //font-size: 24px;
-  }
 }
 
 .title-colours--small {
@@ -299,6 +296,22 @@ $title-animation-time-2: 5s ease-in-out;
     width: fit-content;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+}
+
+.title-colours-narrow {
+  width: 100%;
+  @media screen and (min-width: $max-md + 1px) {
+    width: 70%;
+  }
+}
+
+.title-colours-normal {
+  font-weight: normal;
+  font-size: 18px;
+  @media screen and (min-width: $max-sm + 1px) {
+    font-weight: bold;
+    font-size: 24px;
   }
 }
 
@@ -350,7 +363,6 @@ $title-animation-time-2: 5s ease-in-out;
   }
 }
 
-
 .text {
   font-size: 18px;
   line-height: 28px;
@@ -372,18 +384,6 @@ $title-animation-time-2: 5s ease-in-out;
 .text-small {
   font-size: 16px;
 }
-
-.quote-text {
-  font-size: 24px;
-  line-height: 1.3;
-  font-weight: bold;
-  color: $white;
-
-  @media screen and (min-width: $max-sm + 1px) {
-    font-size: 36px;
-  }
-}
-
 
 .text-center {
   text-align: center;

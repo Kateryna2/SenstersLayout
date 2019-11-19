@@ -9,13 +9,6 @@
   }
 }
 
-.title-colours-narrow {
-  width: 100%;
-  @media screen and (min-width: $max-md + 1px) {
-    width: 70%;
-  }
-}
-
 .contacts-list {
 
   & .list-item {
@@ -26,6 +19,7 @@
     &:hover > a:before {
       opacity: 0;
     }
+
     &:hover > a:after {
       opacity: 1;
     }
@@ -55,6 +49,7 @@
     content: url("../img/sprites/sprite.svg#phone-icon-color");
     opacity: 1;
   }
+
   & .phone:after {
     content: url("../img/sprites/sprite.svg#phone-icon-color-h");
     opacity: 0;
@@ -64,6 +59,7 @@
     content: url("../img/sprites/sprite.svg#mail-icon-color");
     opacity: 1;
   }
+
   & .mail:after {
     content: url("../img/sprites/sprite.svg#mail-icon-color-h");
     opacity: 0;
@@ -73,6 +69,7 @@
     content: url("../img/sprites/sprite.svg#fb-icon-color");
     opacity: 1;
   }
+
   & .fb:after {
     content: url("../img/sprites/sprite.svg#fb-icon-color-h");
     opacity: 0;
@@ -82,6 +79,7 @@
     content: url("../img/sprites/sprite.svg#insta-icon-color");
     opacity: 1;
   }
+
   & .insta:after {
     content: url("../img/sprites/sprite.svg#insta-icon-color-h");
     opacity: 0;

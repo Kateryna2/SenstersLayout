@@ -29,7 +29,7 @@
     pointer-events: auto;
   }
 
-  @media screen and (min-width: $max-sm + 1px){
+  @media screen and (min-width: $max-sm + 1px) {
     width: 570px;
     left: 50%;
     margin-left: -285px;
@@ -40,10 +40,6 @@
       margin-left: -482px;
       padding: 80px 80px;
     }
-  }
-
-  @media screen and (max-width: $max-xs) {
-
   }
 }
 
@@ -68,33 +64,34 @@
     pointer-events: auto;
   }
 
-
-  & .form__submit{
+  & .form__submit {
     width: 170px;
     margin-top: 0;
     margin-left: 50px;
     margin-right: 50px;
   }
-  & .text{
+
+  & .text {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
     max-width: 250px;
   }
-  @media screen and (min-width: $max-sm){
+
+  @media screen and (min-width: $max-sm) {
     bottom: 0;
   }
-  @media screen and (min-width: $max-md){
+  @media screen and (min-width: $max-md) {
     flex-direction: row;
     bottom: 0;
 
-    & .text{
+    & .text {
       max-width: 500px;
     }
   }
 }
 
-.text--cookies{
+.text--cookies {
   text-decoration: underline;
 }
 
@@ -105,10 +102,9 @@
   }
 }
 
-
-.modal-bg { 
+.modal-bg {
   position: fixed;
-  top:0;
+  top: 0;
   bottom: 0;
   left: 0;
   right: 0;
@@ -134,9 +130,8 @@
   cursor: pointer;
 
   &:active,
-  &:focus{
+  &:focus {
     outline: none;
-
   }
 
   &:before,
@@ -176,7 +171,7 @@
     -webkit-text-fill-color: transparent;
   }
 
-  @media screen and (min-width: $max-xs + 1px){
+  @media screen and (min-width: $max-xs + 1px) {
     width: 370px;
   }
 }

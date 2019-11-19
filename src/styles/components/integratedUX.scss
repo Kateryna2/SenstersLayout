@@ -9,7 +9,7 @@
   & .container--narrow {
     padding-right: 43px;
 
-    @media screen and (min-width: $max-sm + 1px){
+    @media screen and (min-width: $max-sm + 1px) {
       padding-right: 200px;
     }
   }
@@ -18,11 +18,6 @@
 .text-service-description {
   padding-top: 20px;
 }
-
-.title--banner.title--banner-down {
-  cursor: default;
-}
-
 
 .text-on-btn {
   color: $black;
@@ -34,7 +29,6 @@
   @media screen and (min-width: $max-sm + 1px) {
     padding: 46px 0 20px 100px;
   }
-
 }
 
 .text-on-btn-big {
@@ -85,7 +79,6 @@
   @media screen and (min-width: $max-sm + 1px) {
     width: auto;
   }
-
 }
 
 .col-2 {
