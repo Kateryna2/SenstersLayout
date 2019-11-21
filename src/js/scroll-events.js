@@ -1,7 +1,7 @@
 const $document = $(document);
 const $body = $('body');
 const $infoBlock = $('.js-info-block');
-const $textInfoblock = $('.js-text-infoblock');
+const $textInfoblock = $('.js-text-info-block');
 
 // $document.on('scroll', function() {
 //   if($infoBlock.length) {
@@ -35,20 +35,20 @@ $infoBlock.on('wheel', function () {
 });
 
 
+
+
 // $(window).on('scroll touchmove mousewheel', function () {
 //
 //     if ($(window).scrollTop() >= $('.quote').outerHeight() + $('.banner').outerHeight() ) {
 //         $body.css({
 //             'overflow': 'hidden',
 //             'height': '100%',
-//             'width': '100%'
 //         });
 //
 //         if ($( '#end' ).hasClass('is-active') || $( '#begin' ).hasClass('is-active')) {
 //             $body.css({
 //                 'overflow': 'auto',
 //                 'height': 'auto',
-//                 'width': 'auto'
 //             });
 //         }
 //         }

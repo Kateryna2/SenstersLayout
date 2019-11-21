@@ -6,7 +6,8 @@
     <title>Sensters</title>
     //= includes/head.html
 </head>
-<body>
+
+<body onLoad="scrollDiv_init()">
 //= includes/header.html
 <main>
 
@@ -34,9 +35,8 @@
             <a href="#third" id="end" class="info-block-scroll--number js-info-block-number">03</a>
         </div>
         <div class="info-block js-info-block">
-
-            <div class=" info-block--inside containers y mandatory-scroll-snapping">
-                <div class="text text--info-block text--info-block--first js-text-infoblock snap-stop-always"
+            <div class="info-block--inside">
+                <div class="text text--info-block text--info-block--first js-text-info-block"
                      id="first">
                     <h3 class="title--small">Result-oriented</h3>
                     <p>At all stages of the work we show a specific quantitative indicator that
@@ -44,16 +44,15 @@
                         order, lead customer, purchase).</p>
                     <p>We are data driven and ROMI oriented (return on marketing investment). Our
                         clients get sales increase from marketing investment, not just the number of clicks or CTR.</p>
-
                 </div>
-                <div class="text text--info-block text--info-block--second js-text-infoblock snap-stop-always"
+                <div class="text text--info-block text--info-block--second js-text-info-block"
                      id="second">
                     <h3 class="title--small">Effective</h3>
                     <p>We get acquainted with your business processes and choose the most effective
                         digital channels to boost your results.</p>
                     <p>We identify the main business goals and provide the tools to achieve them.</p>
                 </div>
-                <div class="text text--info-block text--info-block--third js-text-infoblock snap-stop-always"
+                <div class="text text--info-block text--info-block--third js-text-info-block"
                      id="third">
                     <h3 class="title--small">Transparent</h3>
                     <p>Reasonable pricing model based on the number of hours spent by the team.</p>
