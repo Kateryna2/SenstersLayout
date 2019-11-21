@@ -1,7 +1,8 @@
 const $document = $(document);
 const $body = $('body');
 const $infoBlock = $('.js-info-block');
-const $textInfoblock = $('.js-text-info-block');
+const $textInfoBlock = $('.js-text-info-block');
+const $infoBlockInside = $('.info-block--inside');
 
 // $document.on('scroll', function() {
 //   if($infoBlock.length) {
@@ -9,50 +10,50 @@ const $textInfoblock = $('.js-text-info-block');
 //   }
 // });
 
+
 $infoBlock.on('wheel', function () {
-    //   let scrollingHeight = $(this).find('.info-block--inside').height() + 155;
-    //   let currentScrollPosition = $(this).scrollTop() + $(this).height();
-    // // console.log(
-    // //   ($(this).find('.info-block--inside').height() + 155),
-    // //   ($(this).scrollTop() + $(this).height())
-    // // );
+  //   let scrollingHeight = $(this).find('.info-block--inside').height() + 155;
+  //   let currentScrollPosition = $(this).scrollTop() + $(this).height();
+  // // console.log(
+  // //   ($(this).find('.info-block--inside').height() + 155),
+  // //   ($(this).scrollTop() + $(this).height())
+  // // );
 
-    $textInfoblock.each(function () {
-        let $this = $(this);
-        let thisPosTop = $this.position().top;
-        let thisHref = $this.attr('id');
-
-
-        if (thisPosTop >= 0 && thisPosTop < 10) {
-            $(`.js-info-block-number[href="#${thisHref}"]`).addClass('is-active');
-            $(`.js-info-block-number[href="#${thisHref}"]`).siblings().removeClass('is-active');
-        }
+  $textInfoBlock.each(function () {
+    let $this = $(this);
+    let thisPosTop = $this.position().top;
+    let thisHref = $this.attr('id');
 
 
-    });
+    if (thisPosTop >= 0 && thisPosTop < 10) {
+      $(`.js-info-block-number[href="#${thisHref}"]`).addClass('is-active');
+      $(`.js-info-block-number[href="#${thisHref}"]`).siblings().removeClass('is-active');
+    }
+
+
+  });
 
 
 });
 
 
-
-
 // $(window).on('scroll touchmove mousewheel', function () {
 //
-//     if ($(window).scrollTop() >= $('.quote').outerHeight() + $('.banner').outerHeight() ) {
-//         $body.css({
-//             'overflow': 'hidden',
-//             'height': '100%',
-//         });
-//
-//         if ($( '#end' ).hasClass('is-active') || $( '#begin' ).hasClass('is-active')) {
-//             $body.css({
-//                 'overflow': 'auto',
-//                 'height': 'auto',
-//             });
-//         }
-//         }
-//
+//   if ($(window).scrollTop() >= $('.quote').outerHeight() + $('.banner').outerHeight()) {
+//     $body.css({
+//       'overflow': 'hidden',
+//       'height': '100%',
+//     });
+//     $infoBlock.css({
+//       'pointer-events': 'auto'
+//     });
+//   }
+//   if ($('#end').hasClass('is-active') || $('#begin').hasClass('is-active')) {
+//     $body.css({
+//       'overflow': '',
+//       'height': '',
+//     });
+//   }
 //
 // });
 
