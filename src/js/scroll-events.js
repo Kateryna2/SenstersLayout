@@ -4,21 +4,7 @@ const $infoBlock = $('.js-info-block');
 const $textInfoBlock = $('.js-text-info-block');
 const $infoBlockInside = $('.info-block--inside');
 
-// $document.on('scroll', function() {
-//   if($infoBlock.length) {
-//     infoBlockAnimation();
-//   }
-// });
-
-
 $infoBlock.on('wheel', function () {
-  //   let scrollingHeight = $(this).find('.info-block--inside').height() + 155;
-  //   let currentScrollPosition = $(this).scrollTop() + $(this).height();
-  // // console.log(
-  // //   ($(this).find('.info-block--inside').height() + 155),
-  // //   ($(this).scrollTop() + $(this).height())
-  // // );
-
   $textInfoBlock.each(function () {
     let $this = $(this);
     let thisPosTop = $this.position().top;
@@ -29,11 +15,7 @@ $infoBlock.on('wheel', function () {
       $(`.js-info-block-number[href="#${thisHref}"]`).addClass('is-active');
       $(`.js-info-block-number[href="#${thisHref}"]`).siblings().removeClass('is-active');
     }
-
-
   });
-
-
 });
 
 
@@ -58,20 +40,41 @@ $infoBlock.on('wheel', function () {
 // });
 
 
-// function infoBlockAnimation() {
-//   let posTop = $infoBlock[0].getBoundingClientRect().top - 118;
-//
-//   $infoBlock.css('overflow', 'hidden');
-//
-//   if(posTop <= 0) {
-//     $body.css({
-//       'position': 'absolute',
-//       'overflow': 'hidden',
-//       'height': '100vh',
-//       'width': '100%'
-//     });
-//
-//     $infoBlock.css('overflow', 'scroll');
-//   }
-// }
+if (window.matchMedia('(min-width: 768px)').matches) {
+  $(function () {
+    var controller = new ScrollMagic.Controller({
+      globalSceneOptions: {
+        triggerHook: 0.1
+      }
+    });
+    new ScrollMagic.Scene({
+      triggerElement: '.info-block-section',
+      triggerHook: 0
+    })
+      .setPin('.info-block-title')
+      //.addIndicators()
+      .addTo(controller);
 
+    $('.text--info-block').each(function () {
+      new ScrollMagic.Scene({
+        triggerElement: this,
+        duration: '100%'
+      });
+    });
+  });
+
+  $(function () {
+    var controller2 = new ScrollMagic.Controller({
+      globalSceneOptions: {
+        triggerHook: 1,
+        duration: 700
+      }
+    });
+    new ScrollMagic.Scene({
+      triggerElement: '.banner-main--down',
+    })
+      .setClassToggle('.info-block-title--scroll', 'invisible')
+      //.addIndicators()
+      .addTo(controller2);
+  });
+}

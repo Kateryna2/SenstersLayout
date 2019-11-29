@@ -12,10 +12,6 @@
   body.is-loaded & {
     pointer-events: auto;
   }
-
-  @media screen and (min-width: $max-sm + 1px) {
-    //height: 800px;
-  }
 }
 
 .banner--main {
@@ -49,13 +45,13 @@
   }
 }
 
-.arrow-down{
+.arrow-down {
   position: absolute;
   width: 35px;
   height: 40px;
   top: 90vh;
 
-  @media screen and (min-width: $max-sm + 1px){
+  @media screen and (min-width: $max-sm + 1px) {
     top: 90vh;
   }
 
@@ -81,4 +77,11 @@ html {
   }
 }
 
+.banner-main--down {
+  margin-top: 50px;
+
+  @media screen and (min-width: $max-sm + 1px) {
+    margin-top: 0;
+  }
+}
 
