@@ -7,13 +7,7 @@
   padding-top: 187px;
 }
 
-//.page404-text {
-//  max-width: 444px;
-//  margin-left: auto;
-//  margin-right: auto;
-//}
-
-.page404-title{
+.page404-title {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
@@ -26,7 +20,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-.text--white-404{
+.text--white-404 {
   max-width: 380px;
   margin-left: auto;
   margin-right: auto;
@@ -68,7 +62,7 @@
 
   &:hover {
     animation: hover-animation 3.5s linear infinite;
-    box-shadow: 0 0 10px rgba( $white, .3);
+    box-shadow: 0 0 10px rgba($white, .3);
   }
 }
 

@@ -11,7 +11,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (min-width: $max-sm + 1px){
+  @media screen and (min-width: $max-sm + 1px) {
     font-size: 48px;
     text-align: center;
     padding-left: 0;
@@ -19,7 +19,6 @@
     margin-bottom: 60px;
   }
 }
-
 
 .title-small-careers {
   align-items: center;
@@ -31,19 +30,10 @@
   margin-right: auto;
   font-weight: normal;
 
-  @media screen and (min-width: $max-sm + 1px){
+  @media screen and (min-width: $max-sm + 1px) {
     text-align: center;
     padding-left: 0;
     padding-right: 0;
-  }
-}
-
-.title-colours-normal{
-  font-weight: normal;
-  font-size: 18px;
-  @media screen and (min-width: $max-sm + 1px){
-    font-weight: bold;
-    font-size: 24px;
   }
 }
 

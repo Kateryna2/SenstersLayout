@@ -1,0 +1,153 @@
+.reviews {
+  position: relative;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: -100px;
+  background: linear-gradient(84.55deg, #00009A 14.49%, #EB3626 66.87%, #EB3423 80.43%);
+  padding-bottom: 120px;
+
+  @media screen and (min-width: $max-md + 1px) {
+    background: linear-gradient(69.18deg, #00009A 20%, #EB3626 90%, #EB3423 100%);
+  }
+}
+
+.title--review {
+  padding-top: 65px;
+  padding-bottom: 35px;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and (min-width: $max-md + 1px) {
+    width: 100%;
+    padding: 127px 0 100px 135px;
+  }
+}
+
+.reviews-list {
+  position: relative;
+  z-index: 2;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $max-xs + 1px) {
+    width: 80%;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 520px;
+  }
+  @media screen and (min-width: 1400px) {
+    width: 570px;
+  }
+}
+
+.reviews-list-nav {
+  width: 100%;
+  position: absolute;
+  top: 350px;
+  left: 0;
+  z-index: 1;
+  display: none;
+
+  .slick-slide {
+
+    .review-card {
+      transition: opacity .85s ease;
+    }
+
+    &.slick-center {
+      .review-card {
+        pointer-events: none;
+        opacity: 0;
+      }
+    }
+  }
+
+  @media screen and (min-width: $max-lg + 1px) {
+    display: unset;
+  }
+}
+
+.review-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  color: $white;
+
+  &-nav {
+    transform: scale(0.5);
+    height: 270px;
+    overflow: hidden;
+    filter: blur(12px);
+  }
+}
+
+.review-client {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+.review-client-photo {
+  margin: 40px 0 0 35px;
+  width: 60px;
+  height: 60px;
+}
+
+.review-client-details {
+  padding: 54px 0 8px 20px;
+}
+
+.review-client-company {
+  font-weight: 100;
+  padding-top: 8px;
+  opacity: 0.5;
+}
+
+.review-text {
+  font-size: 16px;
+  line-height: 28px;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  padding: 37px;
+}
+
+.slick-slide {
+  outline: none;
+}
+
+button.slick-prev.slick-arrow {
+  position: absolute !important;
+  left: calc(50% - 100px);
+  bottom: -40px;
+  background: none;
+  border: none;
+  z-index: 999;
+
+  &:focus {
+    outline: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    top: -70px;
+    left: calc(50% - 330px);
+  }
+}
+
+button.slick-next.slick-arrow {
+  position: absolute !important;
+  left: calc(50% + 40px);
+  bottom: -40px;
+  background: none;
+  border: none;
+  z-index: 999;
+
+  &:focus {
+    outline: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    top: -70px;
+    left: calc(50% + 285px);
+  }
+}
